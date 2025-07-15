@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coton Blanc - Planning Interventions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Login Screen */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-box h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .login-box button:hover {
+            background: #5a67d8;
+        }
+
+        .error-message {
+            color: #e53e3e;
+            text-align: center;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        /* Main App */
+        .app-container {
+            display: none;
+            min-height: 100vh;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .view-selector {
+            display: flex;
+            gap: 5px;
+            background: #f0f0f0;
+            padding: 4px;
+            border-radius: 8px;
+        }
+
+        .view-btn {
+            padding: 8px 16px;
+            background: transparent;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .view-btn.active {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .filters {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .filter-select {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .logout-btn {
+            padding: 8px 16px;
+            background: #e53e3e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Calendar Container */
+        .calendar-container {
+            padding: 20px;
+            background: white;
+            margin: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .app-container {
+                padding-top: 120px;
+            }
+            
+            .header {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .header-controls {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .view-selector {
+                order: 1;
+                flex: 1;
+            }
+            
+            .filters {
+                order: 2;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+            
+            .filter-select {
+                flex: 1;
+                max-width: calc(100% - 110px);
+            }
+            
+            .calendar-container {
+                margin: 10px;
+            }
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .calendar-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .calendar-nav button {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Monthly View */
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            background: #e2e8f0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .calendar-day-header {
+            background: #f7fafc;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .calendar-day {
+            background: white;
+            min-height: 100px;
+            padding: 8px;
+            position: relative;
+        }
+
+        .calendar-day-number {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .calendar-day.today {
+            background: #fffbeb;
+        }
+
+        .calendar-day.today .calendar-day-number {
+            color: #d69e2e;
+        }
+
+        /* Weekly View */
+        .weekly-view {
+            display: none;
+            overflow-x: auto;
+        }
+
+        .weekly-grid {
+            display: grid;
+            grid-template-columns: 80px repeat(7, 1fr);
+            min-width: 800px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .time-slot {
+            padding: 20px 10px;
+            border-bottom: 1px solid #e2e8f0;
+            border-right: 1px solid #e2e8f0;
+            background: #f7fafc;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .weekly-day-header {
+            padding: 15px;
+            text-align: center;
+            background: #f7fafc;
+            border-bottom: 1px solid #e2e8f0;
+            border-right: 1px solid #e2e8f0;
+            font-weight: bold;
+        }
+
+        .weekly-day-column {
+            position: relative;
+            border-right: 1px solid #e2e8f0;
+            min-height: 600px;
+            background: white;
+        }
+
+        .weekly-intervention {
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            overflow: hidden;
+            background: #edf2f7;
+            border: 1px solid #cbd5e0;
+            border-left-width: 3px;
+        }
+        
+        .weekly-intervention.equipe-1 { border-left-color: #e53e3e; }
+        .weekly-intervention.equipe-2 { border-left-color: #38a169; }
+        .weekly-intervention.equipe-3 { border-left-color: #3182ce; }
+        .weekly-intervention.equipe-4 { border-left-color: #d69e2e; }
+        .weekly-intervention.equipe-5 { border-left-color: #805ad5; }
+
+        /* Daily View */
+        .daily-view {
+            display: none;
+        }
+
+        .daily-timeline {
+            border: 1px solid #e2e8f0;
+            background: white;
+        }
+
+        .daily-hour {
+            display: flex;
+            border-bottom: 1px solid #e2e8f0;
+            min-height: 60px;
+        }
+
+        .daily-hour-label {
+            width: 80px;
+            padding: 10px;
+            background: #f7fafc;
+            border-right: 1px solid #e2e8f0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .daily-hour-content {
+            flex: 1;
+            padding: 5px;
+            position: relative;
+        }
+
+        .daily-intervention {
+            background: #edf2f7;
+            padding: 8px;
+            margin: 2px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            border-left: 3px solid #667eea;
+        }
+        
+        .daily-intervention.equipe-1 { border-left-color: #e53e3e; }
+        .daily-intervention.equipe-2 { border-left-color: #38a169; }
+        .daily-intervention.equipe-3 { border-left-color: #3182ce; }
+        .daily-intervention.equipe-4 { border-left-color: #d69e2e; }
+        .daily-intervention.equipe-5 { border-left-color: #805ad5; }
+
+        /* Intervention Cards */
+        .intervention-card {
+            background: #edf2f7;
+            padding: 4px 8px;
+            margin-bottom: 4px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+
+        .intervention-card:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .intervention-card.equipe-1 { border-left-color: #e53e3e; }
+        .intervention-card.equipe-2 { border-left-color: #38a169; }
+        .intervention-card.equipe-3 { border-left-color: #3182ce; }
+        .intervention-card.equipe-4 { border-left-color: #d69e2e; }
+        .intervention-card.equipe-5 { border-left-color: #805ad5; }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #718096;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            width: 120px;
+            color: #4a5568;
+        }
+
+        .info-value {
+            flex: 1;
+            color: #2d3748;
+        }
+
+        .last-update {
+            text-align: center;
+            color: #718096;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Container -->
+    <div class="login-container" id="loginContainer">
+        <div class="login-box">
+            <h1>🧹 Coton Blanc</h1>
+            <p style="text-align: center; margin-bottom: 30px; color: #666;">Planning des interventions</p>
+            <div class="error-message" id="errorMessage">Mot de passe incorrect</div>
+            <input type="password" id="passwordInput" placeholder="Mot de passe" onkeypress="if(event.key==='Enter') login()">
+            <button onclick="login()">Se connecter</button>
+        </div>
+    </div>
+
+    <!-- App Container -->
+    <div class="app-container" id="appContainer">
+        <div class="header">
+            <h1>🧹 Planning Coton Blanc</h1>
+            <div class="header-controls">
+                <div class="view-selector">
+                    <button class="view-btn active" onclick="switchView('month')">Mois</button>
+                    <button class="view-btn" onclick="switchView('week')">Semaine</button>
+                    <button class="view-btn" onclick="switchView('day')">Jour</button>
+                </div>
+                <div class="filters">
+                    <select class="filter-select" id="teamFilter" onchange="filterInterventions()">
+                        <option value="all">Toutes les équipes</option>
+                        <option value="1">Équipe 1 - Rouge</option>
+                        <option value="2">Équipe 2 - Verte</option>
+                        <option value="3">Équipe 3 - Bleue</option>
+                        <option value="4">Équipe 4 - Jaune</option>
+                        <option value="5">Équipe 5 - Violette</option>
+                    </select>
+                    <button class="logout-btn" onclick="logout()">Déconnexion</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <h2 id="currentPeriod"></h2>
+                <div class="calendar-nav">
+                    <button onclick="navigatePrevious()">←</button>
+                    <button onclick="navigateToday()">Aujourd'hui</button>
+                    <button onclick="navigateNext()">→</button>
+                </div>
+            </div>
+            
+            <!-- Monthly View -->
+            <div class="calendar-grid" id="monthlyView"></div>
+            
+            <!-- Weekly View -->
+            <div class="weekly-view" id="weeklyView"></div>
+            
+            <!-- Daily View -->
+            <div class="daily-view" id="dailyView"></div>
+            
+            <div class="last-update" id="lastUpdate"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="interventionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Détails de l'intervention</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
