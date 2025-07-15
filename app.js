@@ -46,6 +46,16 @@ function generateExampleData() {
         []
     ];
     
+    // Ajout des catégories de prestations
+    const categories = [
+        "Nettoyage bureaux",
+        "Entretien extérieur", 
+        "Vitrerie",
+        "Désinfection",
+        "Nettoyage industriel",
+        "Entretien résidentiel"
+    ];
+    
     // Générer des interventions pour chaque jour de la semaine (lundi à dimanche)
     for (let i = 0; i < 7; i++) {
         const date = new Date(currentWeekStart);
@@ -79,7 +89,11 @@ function generateExampleData() {
                 materiel: materiels[Math.floor(Math.random() * materiels.length)],
                 instructions: j === 0 ? "Nettoyage complet des bureaux" : "Entretien régulier",
                 statut: "Intervention programmée",
-                membres: []
+                membres: [],
+                // NOUVEAUX CHAMPS
+                categorie: categories[Math.floor(Math.random() * categories.length)],
+                duree: duration,
+                telephone: "+689 40 " + Math.floor(Math.random() * 900000 + 100000)
             });
         }
     }
@@ -233,8 +247,11 @@ function renderMonthlyView() {
         
         dayInterventions.forEach(intervention => {
             const equipeClass = getEquipeClass(intervention.equipe);
-            html += `<div class="intervention-card ${equipeClass}" onclick="showIntervention('${intervention.id}')">
-                ${intervention.title}
+            html += `<div class="intervention-card ${equipeClass}" onclick="showIntervention('${intervention.id}')" title="${intervention.categorie} - ${intervention.duree}h">
+                <strong>${intervention.title}</strong>
+                <small style="display: block; font-size: 10px; opacity: 0.8;">
+                    ${intervention.categorie} • ${intervention.duree}h
+                </small>
             </div>`;
         });
         
@@ -295,6 +312,7 @@ function renderWeeklyView() {
                         style="height: ${duration * 60 - 10}px;"
                         onclick="showIntervention('${intervention.id}')">
                         <strong>${intervention.title}</strong><br>
+                        <small>${intervention.categorie}</small><br>
                         ${new Date(intervention.start).toLocaleTimeString('fr-FR', {hour: '2-digit', minute: '2-digit'})}
                     </div>`;
                 }
@@ -333,8 +351,10 @@ function renderDailyView() {
                 
                 html += `<div class="daily-intervention ${equipeClass}" onclick="showIntervention('${intervention.id}')">
                     <strong>${intervention.title}</strong> - ${intervention.equipe}<br>
+                    <small>${intervention.categorie} • Durée: ${intervention.duree}h</small><br>
                     ${startTime} - ${endTime}<br>
-                    📍 ${intervention.adresse}
+                    📍 ${intervention.adresse}<br>
+                    📞 ${intervention.telephone || 'Non renseigné'}
                 </div>`;
             }
         });
@@ -457,6 +477,14 @@ function showIntervention(id) {
             <div class="info-value">${intervention.title}</div>
         </div>
         <div class="info-row">
+            <div class="info-label">Téléphone :</div>
+            <div class="info-value">${intervention.telephone || 'Non renseigné'}</div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">Catégorie :</div>
+            <div class="info-value">${intervention.categorie || 'Non catégorisé'}</div>
+        </div>
+        <div class="info-row">
             <div class="info-label">Date :</div>
             <div class="info-value">${startDate.toLocaleDateString('fr-FR')}</div>
         </div>
@@ -466,6 +494,10 @@ function showIntervention(id) {
                 ${startDate.toLocaleTimeString('fr-FR', {hour: '2-digit', minute: '2-digit'})}
                 ${endDate ? ' - ' + endDate.toLocaleTimeString('fr-FR', {hour: '2-digit', minute: '2-digit'}) : ''}
             </div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">Durée :</div>
+            <div class="info-value">${intervention.duree} heure(s)</div>
         </div>
         <div class="info-row">
             <div class="info-label">Équipe :</div>
