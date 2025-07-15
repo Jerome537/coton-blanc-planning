@@ -7,7 +7,7 @@ Application web pour gérer et visualiser le planning des interventions de la so
 - **Authentification sécurisée** par mot de passe
 - **3 vues de calendrier** : Mensuelle, Hebdomadaire, Journalière
 - **Filtrage par équipe** avec code couleur
-- **Détails des interventions** en popup
+- **Détails des interventions** en popup avec catégorie, durée et téléphone
 - **Synchronisation automatique** avec Notion via n8n
 - **Design responsive** pour tablettes et mobiles
 
@@ -22,7 +22,7 @@ Application web pour gérer et visualiser le planning des interventions de la so
 1. Fork ce repository
 2. Activer GitHub Pages dans Settings > Pages
 3. Configurer le workflow n8n avec vos IDs Notion
-4. Modifier le mot de passe dans `index.html`
+4. Modifier le mot de passe dans `app.js`
 
 ## 🔧 Configuration
 
@@ -46,7 +46,10 @@ Les interventions sont stockées dans `data/interventions.json` avec le format :
       "adresse": "Adresse complète",
       "materiel": ["Monobrosse", "Échafaudage"],
       "instructions": "Instructions spécifiques",
-      "statut": "Intervention programmée"
+      "statut": "Intervention programmée",
+      "categorie": "Nettoyage bureaux",
+      "duree": 2,
+      "telephone": "+689 40 123456"
     }
   ]
 }
@@ -67,15 +70,33 @@ Les interventions sont stockées dans `data/interventions.json` avec le format :
    - Les flèches pour naviguer dans le temps
    - "Aujourd'hui" pour revenir à la date actuelle
 3. **Filtrage** : Sélectionner une équipe spécifique ou "Toutes les équipes"
-4. **Détails** : Cliquer sur une intervention pour voir tous les détails
+4. **Détails** : Cliquer sur une intervention pour voir tous les détails incluant :
+   - Client et téléphone
+   - Catégorie de prestation
+   - Durée prévue
+   - Équipe assignée
+   - Adresse et instructions
 
 ## 🔄 Synchronisation avec Notion
 
 Le workflow n8n synchronise automatiquement les données toutes les heures :
 1. Lecture des interventions depuis Notion
-2. Transformation au format JSON
-3. Push vers GitHub
-4. Mise à jour automatique du site
+2. Extraction des champs incluant catégorie, durée et téléphone
+3. Transformation au format JSON
+4. Push vers GitHub
+5. Mise à jour automatique du site
+
+### Champs Notion utilisés
+- `Nom Société/Admin Prospect` → Nom du client
+- `Intervention - Date et heure de début` → Début
+- `Intervention - Date et heure de fin théorique` → Fin
+- `Couleur équipe` → Équipe assignée
+- `Adresse géographique de l'intervention` → Adresse
+- `Intervention - Matériel nécessaire` → Matériel
+- `Intervention - Instruction` → Instructions
+- `MAKE - BL - Catégories de Prestations` → Catégorie
+- `Intervention - Durée prévue` → Durée
+- `Téléphone Prospect` → Téléphone
 
 ## 🛠️ Technologies utilisées
 - HTML/CSS/JavaScript vanilla
