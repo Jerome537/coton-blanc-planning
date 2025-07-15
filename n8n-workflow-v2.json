@@ -1,0 +1,111 @@
+{
+  "name": "Coton Blanc - Sync Interventions V2",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "databasePage",
+        "databaseId": "YOUR_INTERVENTIONS_DB_ID",
+        "filterType": "manual",
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "key": "Client/Prospect - Statut du cycle|select",
+              "condition": "equals", 
+              "value": "Intervention programmée"
+            }
+          ]
+        },
+        "options": {
+          "limit": 100
+        }
+      },
+      "name": "Get Interventions from Notion",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const interventions = [];\n\nfor (const item of $input.all()) {\n  const intervention = item.json;\n  const props = intervention.properties;\n  \n  interventions.push({\n    id: intervention.id,\n    title: props['Nom Société/Admin Prospect']?.title?.[0]?.text?.content || 'Sans nom',\n    start: props['Intervention - Date et heure de début']?.date?.start || null,\n    end: props['Intervention - Date et heure de fin théorique']?.formula?.date?.start || null,\n    equipe: props['Couleur équipe']?.multi_select?.[0]?.name || 'Non assigné',\n    equipeColor: props['Couleur équipe']?.multi_select?.[0]?.color || 'gray',\n    adresse: props['Adresse géographique de l\\'intervention']?.rich_text?.[0]?.text?.content || '',\n    commune: props['MAKE - BL - Commune']?.formula?.string || '',\n    materiel: props['Intervention - Matériel nécessaire']?.multi_select?.map(m => m.name) || [],\n    instructions: props['Intervention - Instruction']?.rich_text?.[0]?.text?.content || '',\n    statut: props['Client/Prospect - Statut du cycle']?.select?.name || '',\n    \n    // NOUVEAUX CHAMPS\n    categorie: props['MAKE - BL - Catégories de Prestations']?.formula?.string || \n               props['Catégorie de Prestations']?.relation?.[0]?.id || 'Non catégorisé',\n    duree: props['Intervention - Durée prévue']?.number || 0,\n    telephone: props['Téléphone Prospect']?.phone_number || '',\n    \n    client: {\n      nom: props['Nom Société/Admin Prospect']?.title?.[0]?.text?.content || '',\n      prenom: props['Prénom Prospect']?.rich_text?.[0]?.text?.content || '',\n      nomComplet: props['Nom Prospect']?.rich_text?.[0]?.text?.content || '',\n      email: props['E-mail Prospect']?.email || '',\n      telephone: props['Téléphone Prospect']?.phone_number || ''\n    }\n  });\n}\n\nreturn [{\n  json: {\n    lastUpdate: new Date().toISOString(),\n    interventions: interventions\n  }\n}];"
+      },
+      "name": "Transform Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "content": "={\n  \"lastUpdate\": \"{{ $json.lastUpdate }}\",\n  \"interventions\": {{ JSON.stringify($json.interventions, null, 2) }}\n}",
+        "fileName": "data/interventions.json"
+      },
+      "name": "Create JSON File",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "owner": "Jerome537",
+        "repository": "coton-blanc-planning",
+        "path": "data/interventions.json",
+        "commitMessage": "Update interventions data",
+        "fileContent": "={{ $json }}",
+        "branch": "main"
+      },
+      "name": "Push to GitHub",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [850, 300],
+      "credentials": {
+        "githubApi": {
+          "id": "YOUR_GITHUB_CREDENTIAL_ID",
+          "name": "GitHub API"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Get Interventions from Notion": {
+      "main": [
+        [
+          {
+            "node": "Transform Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform Data": {
+      "main": [
+        [
+          {
+            "node": "Create JSON File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create JSON File": {
+      "main": [
+        [
+          {
+            "node": "Push to GitHub",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "instanceId": "YOUR_INSTANCE_ID"
+  },
+  "tags": []
+}
