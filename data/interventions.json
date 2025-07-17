@@ -1,24 +1,3 @@
 {
-  "lastUpdate": "2025-07-17T05:25:44.847Z",
-  "totalInterventions": 0,
-  "interventionsAvecDates": 0,
-  "interventionsSansDates": 0,
-  "totalEquipes": 0,
-  "interventions": [],
-  "equipes": [],
-  "metadata": {
-    "generatedBy": "n8n-workflow-coton-blanc",
-    "version": "2.3",
-    "timezone": "Pacific/Tahiti",
-    "notionDatabases": {
-      "interventions": "1de543b1-13ef-802c-85f4-f8b0918a6373",
-      "equipes": "1d8543b1-13ef-8030-8dc9-f2c5fb12646d"
-    },
-    "processing": {
-      "totalItems": 1,
-      "interventionsFound": 0,
-      "equipesFound": 0,
-      "interventionsAvecDates": 0
-    }
-  }
+  "debug": "Voir console pour propriétés"
 }
