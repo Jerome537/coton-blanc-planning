@@ -1,5 +1,18 @@
 {
-  "diagnostic": "Voir les logs pour les détails complets",
-  "totalElements": 1,
-  "timestamp": "2025-07-17T05:53:28.070Z"
+  "metadata": {
+    "lastUpdate": "2025-07-17T05:59:53.423Z",
+    "totalInterventions": 0,
+    "interventionsAvecDates": 0,
+    "interventionsSansDates": 0,
+    "totalEquipes": 0,
+    "source": "Notion via n8n",
+    "workflowVersion": "v3.1"
+  },
+  "interventions": [],
+  "equipes": [],
+  "planning": {
+    "prochaines": [],
+    "sansDates": [],
+    "parEquipe": {}
+  }
 }
