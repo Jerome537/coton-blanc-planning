@@ -1,60 +1,132 @@
-/* CSS dynamique pour les couleurs d'équipes */
-.equipe-bleu { border-left-color: #3182ce !important; background-color: #ebf8ff !important; }
-.equipe-vert { border-left-color: #38a169 !important; background-color: #f0fff4 !important; }
-.equipe-rouge { border-left-color: #e53e3e !important; background-color: #fff5f5 !important; }
-.equipe-orange { border-left-color: #dd6b20 !important; background-color: #fffaf0 !important; }
-.equipe-jaune { border-left-color: #d69e2e !important; background-color: #fffff0 !important; }
-.equipe-violet { border-left-color: #805ad5 !important; background-color: #faf5ff !important; }
-.equipe-rose { border-left-color: #d53f8c !important; background-color: #fff5f7 !important; }
-.equipe-gris { border-left-color: #718096 !important; background-color: #f7fafc !important; }
-.equipe-marron { border-left-color: #7c3aed !important; background-color: #fdf6ff !important; }
+/* team-colors.css - Styles pour les couleurs dynamiques des équipes */
 
-/* Classes pour les interventions dans les vues */
-.intervention-card.equipe-bleu,
-.weekly-intervention.equipe-bleu,
-.daily-intervention.equipe-bleu { 
-    border-left-color: #3182ce; 
-    background-color: #ebf8ff;
+/* Couleurs des équipes - Classes dynamiques */
+.equipe-bleu {
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    border-left: 4px solid #2E5F99;
+    color: white;
 }
 
-.intervention-card.equipe-vert,
-.weekly-intervention.equipe-vert,
-.daily-intervention.equipe-vert { 
-    border-left-color: #38a169; 
-    background-color: #f0fff4;
+.equipe-vert {
+    background: linear-gradient(135deg, #50C878 0%, #3BA75E 100%);
+    border-left: 4px solid #2A8043;
+    color: white;
 }
 
-.intervention-card.equipe-rouge,
-.weekly-intervention.equipe-rouge,
-.daily-intervention.equipe-rouge { 
-    border-left-color: #e53e3e; 
-    background-color: #fff5f5;
+.equipe-rouge {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%);
+    border-left: 4px solid #DC2626;
+    color: white;
 }
 
-.intervention-card.equipe-orange,
-.weekly-intervention.equipe-orange,
-.daily-intervention.equipe-orange { 
-    border-left-color: #dd6b20; 
-    background-color: #fffaf0;
+.equipe-orange {
+    background: linear-gradient(135deg, #FFB84D 0%, #FF9800 100%);
+    border-left: 4px solid #E67E00;
+    color: white;
 }
 
-.intervention-card.equipe-jaune,
-.weekly-intervention.equipe-jaune,
-.daily-intervention.equipe-jaune { 
-    border-left-color: #d69e2e; 
-    background-color: #fffff0;
+.equipe-jaune {
+    background: linear-gradient(135deg, #FFD93D 0%, #FFC107 100%);
+    border-left: 4px solid #E6A800;
+    color: #333;
 }
 
-.intervention-card.equipe-violet,
-.weekly-intervention.equipe-violet,
-.daily-intervention.equipe-violet { 
-    border-left-color: #805ad5; 
-    background-color: #faf5ff;
+.equipe-violet {
+    background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);
+    border-left: 4px solid #6C3891;
+    color: white;
 }
 
-/* Styles par défaut pour les équipes sans couleur */
-.intervention-card,
-.weekly-intervention,
-.daily-intervention {
-    transition: all 0.2s;
+.equipe-rose {
+    background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+    border-left: 4px solid #DB0F7B;
+    color: white;
+}
+
+.equipe-gris {
+    background: linear-gradient(135deg, #95A5A6 0%, #7F8C8D 100%);
+    border-left: 4px solid #5D6D7E;
+    color: white;
+}
+
+.equipe-marron {
+    background: linear-gradient(135deg, #A0522D 0%, #8B4513 100%);
+    border-left: 4px solid #6B360F;
+    color: white;
+}
+
+/* Couleur par défaut si pas de couleur définie */
+.equipe-default {
+    background: linear-gradient(135deg, #E0E0E0 0%, #BDBDBD 100%);
+    border-left: 4px solid #9E9E9E;
+    color: #333;
+}
+
+/* Styles pour le filtre des équipes avec couleurs */
+#filterEquipes option[data-color] {
+    padding-left: 25px;
+    position: relative;
+}
+
+#filterEquipes option[data-color]::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+/* Indicateurs de couleur dans le select */
+#filterEquipes option[data-color="bleu"]::before { background-color: #4A90E2; }
+#filterEquipes option[data-color="vert"]::before { background-color: #50C878; }
+#filterEquipes option[data-color="rouge"]::before { background-color: #FF6B6B; }
+#filterEquipes option[data-color="orange"]::before { background-color: #FFB84D; }
+#filterEquipes option[data-color="jaune"]::before { background-color: #FFD93D; }
+#filterEquipes option[data-color="violet"]::before { background-color: #9B59B6; }
+#filterEquipes option[data-color="rose"]::before { background-color: #FF69B4; }
+#filterEquipes option[data-color="gris"]::before { background-color: #95A5A6; }
+#filterEquipes option[data-color="marron"]::before { background-color: #A0522D; }
+
+/* Badge de couleur pour les équipes dans les détails */
+.equipe-color-badge {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.equipe-color-badge.bleu { background-color: #4A90E2; }
+.equipe-color-badge.vert { background-color: #50C878; }
+.equipe-color-badge.rouge { background-color: #FF6B6B; }
+.equipe-color-badge.orange { background-color: #FFB84D; }
+.equipe-color-badge.jaune { background-color: #FFD93D; }
+.equipe-color-badge.violet { background-color: #9B59B6; }
+.equipe-color-badge.rose { background-color: #FF69B4; }
+.equipe-color-badge.gris { background-color: #95A5A6; }
+.equipe-color-badge.marron { background-color: #A0522D; }
+
+/* Hover effects pour les interventions avec couleurs */
+.intervention-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Adaptation pour le mode sombre */
+@media (prefers-color-scheme: dark) {
+    .equipe-jaune {
+        color: white;
+    }
+    
+    .equipe-default {
+        background: linear-gradient(135deg, #424242 0%, #303030 100%);
+        border-left: 4px solid #212121;
+        color: white;
+    }
 }
