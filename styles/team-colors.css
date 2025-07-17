@@ -1,0 +1,60 @@
+/* CSS dynamique pour les couleurs d'équipes */
+.equipe-bleu { border-left-color: #3182ce !important; background-color: #ebf8ff !important; }
+.equipe-vert { border-left-color: #38a169 !important; background-color: #f0fff4 !important; }
+.equipe-rouge { border-left-color: #e53e3e !important; background-color: #fff5f5 !important; }
+.equipe-orange { border-left-color: #dd6b20 !important; background-color: #fffaf0 !important; }
+.equipe-jaune { border-left-color: #d69e2e !important; background-color: #fffff0 !important; }
+.equipe-violet { border-left-color: #805ad5 !important; background-color: #faf5ff !important; }
+.equipe-rose { border-left-color: #d53f8c !important; background-color: #fff5f7 !important; }
+.equipe-gris { border-left-color: #718096 !important; background-color: #f7fafc !important; }
+.equipe-marron { border-left-color: #7c3aed !important; background-color: #fdf6ff !important; }
+
+/* Classes pour les interventions dans les vues */
+.intervention-card.equipe-bleu,
+.weekly-intervention.equipe-bleu,
+.daily-intervention.equipe-bleu { 
+    border-left-color: #3182ce; 
+    background-color: #ebf8ff;
+}
+
+.intervention-card.equipe-vert,
+.weekly-intervention.equipe-vert,
+.daily-intervention.equipe-vert { 
+    border-left-color: #38a169; 
+    background-color: #f0fff4;
+}
+
+.intervention-card.equipe-rouge,
+.weekly-intervention.equipe-rouge,
+.daily-intervention.equipe-rouge { 
+    border-left-color: #e53e3e; 
+    background-color: #fff5f5;
+}
+
+.intervention-card.equipe-orange,
+.weekly-intervention.equipe-orange,
+.daily-intervention.equipe-orange { 
+    border-left-color: #dd6b20; 
+    background-color: #fffaf0;
+}
+
+.intervention-card.equipe-jaune,
+.weekly-intervention.equipe-jaune,
+.daily-intervention.equipe-jaune { 
+    border-left-color: #d69e2e; 
+    background-color: #fffff0;
+}
+
+.intervention-card.equipe-violet,
+.weekly-intervention.equipe-violet,
+.daily-intervention.equipe-violet { 
+    border-left-color: #805ad5; 
+    background-color: #faf5ff;
+}
+
+/* Styles par défaut pour les équipes sans couleur */
+.intervention-card,
+.weekly-intervention,
+.daily-intervention {
+    transition: all 0.2s;
+}
