@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdate": "2025-07-17T16:05:53.818Z",
+    "lastUpdate": "2025-07-17T16:22:55.539Z",
     "totalInterventions": 4,
     "interventionsAvecDates": 3,
     "interventionsSansDates": 1,
@@ -17,7 +17,7 @@
       "dateDebutFormatee": "12/07/2025 à 08:00",
       "dureePrevu": 120,
       "equipe": "Équipe 4",
-      "couleurEquipe": "orange",
+      "couleurEquipe": "vert",
       "membresIntervenants": "AHINI Purea ,FLORES Dalila ,BELLAIS Samuel",
       "equipeIds": [
         "1d8543b1-13ef-80ce-9ed8-d9ca85181811"
@@ -64,7 +64,7 @@
       "dateDebutFormatee": "14/07/2025 à 12:00",
       "dureePrevu": 30,
       "equipe": "Équipe 5",
-      "couleurEquipe": "jaune",
+      "couleurEquipe": "rouge",
       "membresIntervenants": "FLORES Dalila ,TEIHOTAATA Maruia",
       "equipeIds": [
         "1d8543b1-13ef-805a-877d-de5247d73914"
@@ -157,7 +157,7 @@
       "dateDebutFormatee": null,
       "dureePrevu": 60,
       "equipe": "Équipe 1",
-      "couleurEquipe": "bleu",
+      "couleurEquipe": "rose",
       "membresIntervenants": "AHINI Purea ,FLORES Takau ,TEIHOTAATA Maruia",
       "equipeIds": [
         "1d8543b1-13ef-81f4-826a-e1f5135f5157"
@@ -216,7 +216,7 @@
     {
       "id": "1d8543b1-13ef-8048-91ea-e7af6968afab",
       "nom": "Équipe Dial’Isis",
-      "couleur": "rouge",
+      "couleur": "bleu",
       "membres": [
         "1ed543b1-13ef-8090-a451-da889b5e311e",
         "1ed543b1-13ef-80f4-be1b-f35de31d6337"
@@ -291,7 +291,7 @@
     {
       "id": "1d8543b1-13ef-80d6-8709-fdfe681d9b55",
       "nom": "Équipe 6",
-      "couleur": "violet",
+      "couleur": "orange",
       "membres": [
         "1ec543b1-13ef-803c-8f41-c24384617693",
         "1ed543b1-13ef-8005-998b-d098d3e583b1"
@@ -316,7 +316,7 @@
     {
       "id": "1d8543b1-13ef-805a-877d-de5247d73914",
       "nom": "Équipe 5",
-      "couleur": "jaune",
+      "couleur": "rouge",
       "membres": [
         "1ec543b1-13ef-80ae-b382-fb6bf8e0d7af",
         "1ed543b1-13ef-806c-b0a1-e9105eb1f4c6",
@@ -341,7 +341,7 @@
     {
       "id": "1d8543b1-13ef-80ce-9ed8-d9ca85181811",
       "nom": "Équipe 4",
-      "couleur": "orange",
+      "couleur": "vert",
       "membres": [
         "1ec543b1-13ef-8018-a8b0-d2b74059a346",
         "1ed543b1-13ef-809c-b5f1-eccb0a8842f5"
@@ -365,7 +365,7 @@
     {
       "id": "1d8543b1-13ef-8052-a8ce-ca4f298ac033",
       "nom": "Équipe 3",
-      "couleur": "vert",
+      "couleur": "bleu",
       "membres": [
         "1ec543b1-13ef-8045-987b-c8289a1d198b",
         "1ed543b1-13ef-80a3-9549-caa1278b04b5",
@@ -387,7 +387,7 @@
     {
       "id": "1d8543b1-13ef-8005-9285-fee7947ad3da",
       "nom": "Équipe 2",
-      "couleur": "bleu",
+      "couleur": "violet",
       "membres": [
         "1ec543b1-13ef-80e3-84fa-ff3378530b53",
         "1ec543b1-13ef-8070-8671-ecc5eb2a4a3f",
@@ -411,7 +411,7 @@
     {
       "id": "1d8543b1-13ef-81f4-826a-e1f5135f5157",
       "nom": "Équipe 1",
-      "couleur": "bleu",
+      "couleur": "rose",
       "membres": [
         "1ec543b1-13ef-80ea-a633-dce05c6bc137",
         "1ec543b1-13ef-80fb-a2b1-cd0c49bca283",
@@ -448,7 +448,7 @@
         "dateDebutFormatee": "12/07/2025 à 08:00",
         "dureePrevu": 120,
         "equipe": "Équipe 4",
-        "couleurEquipe": "orange",
+        "couleurEquipe": "vert",
         "membresIntervenants": "AHINI Purea ,FLORES Dalila ,BELLAIS Samuel",
         "equipeIds": [
           "1d8543b1-13ef-80ce-9ed8-d9ca85181811"
@@ -495,7 +495,7 @@
         "dateDebutFormatee": "14/07/2025 à 12:00",
         "dureePrevu": 30,
         "equipe": "Équipe 5",
-        "couleurEquipe": "jaune",
+        "couleurEquipe": "rouge",
         "membresIntervenants": "FLORES Dalila ,TEIHOTAATA Maruia",
         "equipeIds": [
           "1d8543b1-13ef-805a-877d-de5247d73914"
@@ -590,7 +590,7 @@
         "dateDebutFormatee": null,
         "dureePrevu": 60,
         "equipe": "Équipe 1",
-        "couleurEquipe": "bleu",
+        "couleurEquipe": "rose",
         "membresIntervenants": "AHINI Purea ,FLORES Takau ,TEIHOTAATA Maruia",
         "equipeIds": [
           "1d8543b1-13ef-81f4-826a-e1f5135f5157"
@@ -632,6 +632,7 @@
     "parEquipe": {
       "Équipe 4": {
         "nomEquipe": "Équipe 4",
+        "couleur": "vert",
         "interventions": [
           {
             "id": "22e543b1-13ef-810b-8fd9-fbb6fb2ee07e",
@@ -641,7 +642,7 @@
             "dateDebutFormatee": "12/07/2025 à 08:00",
             "dureePrevu": 120,
             "equipe": "Équipe 4",
-            "couleurEquipe": "orange",
+            "couleurEquipe": "vert",
             "membresIntervenants": "AHINI Purea ,FLORES Dalila ,BELLAIS Samuel",
             "equipeIds": [
               "1d8543b1-13ef-80ce-9ed8-d9ca85181811"
@@ -685,7 +686,7 @@
         "equipeDetails": {
           "id": "1d8543b1-13ef-80ce-9ed8-d9ca85181811",
           "nom": "Équipe 4",
-          "couleur": "orange",
+          "couleur": "vert",
           "membres": [
             "1ec543b1-13ef-8018-a8b0-d2b74059a346",
             "1ed543b1-13ef-809c-b5f1-eccb0a8842f5"
@@ -709,6 +710,7 @@
       },
       "Équipe 5": {
         "nomEquipe": "Équipe 5",
+        "couleur": "rouge",
         "interventions": [
           {
             "id": "22e543b1-13ef-8106-8561-f689a46176fe",
@@ -718,7 +720,7 @@
             "dateDebutFormatee": "14/07/2025 à 12:00",
             "dureePrevu": 30,
             "equipe": "Équipe 5",
-            "couleurEquipe": "jaune",
+            "couleurEquipe": "rouge",
             "membresIntervenants": "FLORES Dalila ,TEIHOTAATA Maruia",
             "equipeIds": [
               "1d8543b1-13ef-805a-877d-de5247d73914"
@@ -762,7 +764,7 @@
         "equipeDetails": {
           "id": "1d8543b1-13ef-805a-877d-de5247d73914",
           "nom": "Équipe 5",
-          "couleur": "jaune",
+          "couleur": "rouge",
           "membres": [
             "1ec543b1-13ef-80ae-b382-fb6bf8e0d7af",
             "1ed543b1-13ef-806c-b0a1-e9105eb1f4c6",
@@ -787,6 +789,7 @@
       },
       "Équipe 7": {
         "nomEquipe": "Équipe 7",
+        "couleur": "bleu",
         "interventions": [
           {
             "id": "22e543b1-13ef-81fd-8bf2-ee60368b04d0",
@@ -870,6 +873,7 @@
       },
       "Équipe 1": {
         "nomEquipe": "Équipe 1",
+        "couleur": "rose",
         "interventions": [
           {
             "id": "22e543b1-13ef-808e-8fd2-ed0985ff388a",
@@ -879,7 +883,7 @@
             "dateDebutFormatee": null,
             "dureePrevu": 60,
             "equipe": "Équipe 1",
-            "couleurEquipe": "bleu",
+            "couleurEquipe": "rose",
             "membresIntervenants": "AHINI Purea ,FLORES Takau ,TEIHOTAATA Maruia",
             "equipeIds": [
               "1d8543b1-13ef-81f4-826a-e1f5135f5157"
@@ -922,7 +926,7 @@
         "equipeDetails": {
           "id": "1d8543b1-13ef-81f4-826a-e1f5135f5157",
           "nom": "Équipe 1",
-          "couleur": "bleu",
+          "couleur": "rose",
           "membres": [
             "1ec543b1-13ef-80ea-a633-dce05c6bc137",
             "1ec543b1-13ef-80fb-a2b1-cd0c49bca283",
