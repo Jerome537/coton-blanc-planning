@@ -135,22 +135,72 @@ function showApp() {
 // Charger les données
 async function loadInterventions() {
     try {
-        // Pour la démo, utiliser les données d'exemple
-        interventionsData = generateExampleData();
+        // Charger les vraies données depuis le fichier JSON
+        const response = await fetch(DATA_URL);
+        const data = await response.json();
+        
+        // Adapter les données au format attendu par l'application
+        interventionsData = [];
+        
+        // Si les données sont dans un tableau
+        if (Array.isArray(data)) {
+            // Prendre le premier élément qui contient les vraies données
+            const realData = data[0];
+            if (realData && realData.interventions) {
+                // Transformer les interventions au format attendu
+                interventionsData = realData.interventions.map(intervention => ({
+                    id: intervention.id,
+                    title: intervention.client || intervention.title,
+                    start: intervention.dateDebut,
+                    end: intervention.dateFin || intervention.dateDebut,
+                    equipe: intervention.equipe,
+                    adresse: intervention.adresseSiege || intervention.adresseIntervention || '',
+                    commune: intervention.commune,
+                    materiel: intervention.materielNecessaire || [],
+                    instructions: intervention.instruction || '',
+                    statut: intervention.statutValidationBL ? 'Validé' : 'En attente',
+                    membres: intervention.membresIntervenants ? intervention.membresIntervenants.split(',').map(m => m.trim()) : [],
+                    categorie: intervention.categoriePrestation || 'Non catégorisé',
+                    duree: intervention.dureePrevu ? intervention.dureePrevu / 60 : 1, // Convertir minutes en heures
+                    telephone: intervention.telephoneClient || ''
+                }));
+            }
+        } else if (data.interventions) {
+            // Si les données sont directement dans un objet
+            interventionsData = data.interventions.map(intervention => ({
+                id: intervention.id,
+                title: intervention.client || intervention.title,
+                start: intervention.dateDebut,
+                end: intervention.dateFin || intervention.dateDebut,
+                equipe: intervention.equipe,
+                adresse: intervention.adresseSiege || intervention.adresseIntervention || '',
+                commune: intervention.commune,
+                materiel: intervention.materielNecessaire || [],
+                instructions: intervention.instruction || '',
+                statut: intervention.statutValidationBL ? 'Validé' : 'En attente',
+                membres: intervention.membresIntervenants ? intervention.membresIntervenants.split(',').map(m => m.trim()) : [],
+                categorie: intervention.categoriePrestation || 'Non catégorisé',
+                duree: intervention.dureePrevu ? intervention.dureePrevu / 60 : 1, // Convertir minutes en heures
+                telephone: intervention.telephoneClient || ''
+            }));
+        }
+        
+        // Filtrer les interventions avec des dates valides
+        interventionsData = interventionsData.filter(i => i.start);
         
         // Debug : afficher les équipes présentes
         const equipes = [...new Set(interventionsData.map(i => i.equipe))];
         console.log('Équipes dans les données:', equipes);
         console.log('Nombre total d\'interventions:', interventionsData.length);
-        
-        // Dans un cas réel, décommenter ce qui suit :
-        // const response = await fetch(DATA_URL);
-        // const data = await response.json();
-        // interventionsData = data.interventions;
+        console.log('Interventions chargées:', interventionsData);
         
         // Afficher la dernière mise à jour
+        const lastUpdate = Array.isArray(data) && data[0]?.metadata?.lastUpdate 
+            ? new Date(data[0].metadata.lastUpdate)
+            : new Date();
+            
         document.getElementById('lastUpdate').textContent = 
-            `Dernière mise à jour : ${new Date().toLocaleDateString('fr-FR')} à ${new Date().toLocaleTimeString('fr-FR')}`;
+            `Dernière mise à jour : ${lastUpdate.toLocaleDateString('fr-FR')} à ${lastUpdate.toLocaleTimeString('fr-FR')}`;
         
         renderView();
     } catch (error) {
@@ -390,7 +440,9 @@ function getInterventionsForDate(dateStr) {
             
             // Vérifier si l'intervention appartient à l'équipe filtrée
             if (!interventionEquipe.includes(`Équipe ${currentFilter}`) && 
-                !interventionEquipe.includes(`équipe ${currentFilter}`)) {
+                !interventionEquipe.includes(`équipe ${currentFilter}`) &&
+                !interventionEquipe.includes(` ${currentFilter} `) &&
+                !interventionEquipe.includes(` ${currentFilter}`)) {
                 return false;
             }
         }
@@ -408,6 +460,10 @@ function getEquipeClass(equipe) {
     if (equipe.includes('Bleue') || equipe.includes('3')) return 'equipe-3';
     if (equipe.includes('Jaune') || equipe.includes('4')) return 'equipe-4';
     if (equipe.includes('Violette') || equipe.includes('5')) return 'equipe-5';
+    if (equipe.includes('6')) return 'equipe-6';
+    if (equipe.includes('7')) return 'equipe-7';
+    if (equipe.includes('8')) return 'equipe-8';
+    if (equipe.includes('9')) return 'equipe-9';
     return '';
 }
 
@@ -418,7 +474,9 @@ function filterInterventions() {
     // Debug : compter les interventions par équipe
     if (currentFilter !== 'all') {
         const filtered = interventionsData.filter(i => 
-            i.equipe && i.equipe.includes(`Équipe ${currentFilter}`)
+            i.equipe && (i.equipe.includes(`Équipe ${currentFilter}`) || 
+                        i.equipe.includes(` ${currentFilter} `) ||
+                        i.equipe.includes(` ${currentFilter}`))
         );
         console.log(`Interventions pour Équipe ${currentFilter}:`, filtered.length);
         console.log('Exemples:', filtered.slice(0, 3));
