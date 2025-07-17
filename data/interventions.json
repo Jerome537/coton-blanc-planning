@@ -1,18 +1,5 @@
 {
-  "metadata": {
-    "lastUpdate": "2025-07-17T06:25:32.647Z",
-    "totalInterventions": 0,
-    "interventionsAvecDates": 0,
-    "interventionsSansDates": 0,
-    "totalEquipes": 0,
-    "source": "Notion via n8n",
-    "workflowVersion": "v3.1"
-  },
-  "interventions": [],
-  "equipes": [],
-  "planning": {
-    "prochaines": [],
-    "sansDates": [],
-    "parEquipe": {}
-  }
+  "debug": true,
+  "itemCount": 1,
+  "message": "Vérifiez les logs pour comprendre la structure des données"
 }
