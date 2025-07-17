@@ -1,10 +1,11 @@
 {
-  "lastSync": "2025-07-17T07:39:14.918Z",
+  "lastSync": "2025-07-17T07:59:27.173Z",
   "status": "success",
   "interventionsCount": 0,
   "interventionsAvecDates": 0,
   "equipesCount": 0,
-  "workflowId": "I0ShLTdjP0kHAaGL",
-  "workflowName": "Synchro agenda V4.1",
-  "version": "v4.0-TEST"
+  "workflowId": "m6F2QhzZ8sIK5h6r",
+  "workflowName": "Synchro agenda V7",
+  "version": "v7.0-FINAL",
+  "stats": {}
 }
