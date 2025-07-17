@@ -3,6 +3,7 @@ const PASSWORD = 'CotonBlanc2024!';
 const DATA_URL = './data/interventions.json';
 
 let interventionsData = [];
+let equipesColors = new Map(); // NOUVEAU: Stockage des couleurs des équipes
 let currentDate = new Date();
 let currentView = 'month';
 let currentFilter = 'all';
@@ -132,7 +133,7 @@ function showApp() {
     loadInterventions();
 }
 
-// Charger les données
+// Charger les données - MODIFIÉ pour capturer les couleurs
 async function loadInterventions() {
     try {
         // Charger les vraies données depuis le fichier JSON
@@ -141,6 +142,17 @@ async function loadInterventions() {
         
         // Adapter les données au format attendu par l'application
         interventionsData = [];
+        
+        // NOUVEAU: Capturer les couleurs des équipes
+        if (data.equipes && Array.isArray(data.equipes)) {
+            equipesColors.clear();
+            data.equipes.forEach(equipe => {
+                if (equipe.nom && equipe.couleur) {
+                    equipesColors.set(equipe.nom, equipe.couleur);
+                }
+            });
+            console.log('🎨 Couleurs des équipes chargées:', equipesColors);
+        }
         
         // Si les données sont dans un tableau
         if (Array.isArray(data)) {
@@ -154,6 +166,7 @@ async function loadInterventions() {
                     start: intervention.dateDebut,
                     end: intervention.dateFin || intervention.dateDebut,
                     equipe: intervention.equipe,
+                    couleurEquipe: intervention.couleurEquipe, // NOUVEAU: Ajouter la couleur
                     adresse: intervention.adresseSiege || intervention.adresseIntervention || '',
                     commune: intervention.commune,
                     materiel: intervention.materielNecessaire || [],
@@ -173,6 +186,7 @@ async function loadInterventions() {
                 start: intervention.dateDebut,
                 end: intervention.dateFin || intervention.dateDebut,
                 equipe: intervention.equipe,
+                couleurEquipe: intervention.couleurEquipe, // NOUVEAU: Ajouter la couleur
                 adresse: intervention.adresseSiege || intervention.adresseIntervention || '',
                 commune: intervention.commune,
                 materiel: intervention.materielNecessaire || [],
@@ -188,6 +202,9 @@ async function loadInterventions() {
         // Filtrer les interventions avec des dates valides
         interventionsData = interventionsData.filter(i => i.start);
         
+        // Mettre à jour le filtre des équipes avec les couleurs
+        updateTeamFilter(data);
+        
         // Debug : afficher les équipes présentes
         const equipes = [...new Set(interventionsData.map(i => i.equipe))];
         console.log('Équipes dans les données:', equipes);
@@ -197,6 +214,8 @@ async function loadInterventions() {
         // Afficher la dernière mise à jour
         const lastUpdate = Array.isArray(data) && data[0]?.metadata?.lastUpdate 
             ? new Date(data[0].metadata.lastUpdate)
+            : data.metadata?.lastUpdate 
+            ? new Date(data.metadata.lastUpdate)
             : new Date();
             
         document.getElementById('lastUpdate').textContent = 
@@ -208,6 +227,32 @@ async function loadInterventions() {
         // Utiliser les données d'exemple en cas d'erreur
         interventionsData = generateExampleData();
         renderView();
+    }
+}
+
+// NOUVELLE FONCTION: Mettre à jour le filtre des équipes avec couleurs
+function updateTeamFilter(data) {
+    const filterSelect = document.getElementById('teamFilter');
+    if (!filterSelect) return;
+    
+    filterSelect.innerHTML = '<option value="all">Toutes les équipes</option>';
+    
+    if (data.planning && data.planning.parEquipe) {
+        const equipes = Object.keys(data.planning.parEquipe).sort();
+        
+        equipes.forEach(equipe => {
+            const option = document.createElement('option');
+            option.value = equipe;
+            option.textContent = `${equipe} (${data.planning.parEquipe[equipe].total})`;
+            
+            // Ajouter la couleur comme attribut data
+            const couleur = equipesColors.get(equipe) || data.planning.parEquipe[equipe].couleur;
+            if (couleur) {
+                option.setAttribute('data-color', couleur.toLowerCase());
+            }
+            
+            filterSelect.appendChild(option);
+        });
     }
 }
 
@@ -296,7 +341,7 @@ function renderMonthlyView() {
             <div class="calendar-day-number">${day}</div>`;
         
         dayInterventions.forEach(intervention => {
-            const equipeClass = getEquipeClass(intervention.equipe);
+            const equipeClass = getEquipeClass(intervention); // MODIFIÉ: passer l'intervention complète
             html += `<div class="intervention-card ${equipeClass}" onclick="showIntervention('${intervention.id}')" title="${intervention.categorie} - ${intervention.duree}h">
                 <strong>${intervention.title}</strong>
                 <small style="display: block; font-size: 10px; opacity: 0.8;">
@@ -356,7 +401,7 @@ function renderWeeklyView() {
                 const startHour = new Date(intervention.start).getHours();
                 if (startHour === hour) {
                     const duration = (new Date(intervention.end) - new Date(intervention.start)) / (1000 * 60 * 60);
-                    const equipeClass = getEquipeClass(intervention.equipe);
+                    const equipeClass = getEquipeClass(intervention); // MODIFIÉ: passer l'intervention complète
                     
                     html += `<div class="weekly-intervention ${equipeClass}" 
                         style="height: ${duration * 60 - 10}px;"
@@ -395,12 +440,16 @@ function renderDailyView() {
         dayInterventions.forEach(intervention => {
             const startHour = new Date(intervention.start).getHours();
             if (startHour === hour) {
-                const equipeClass = getEquipeClass(intervention.equipe);
+                const equipeClass = getEquipeClass(intervention); // MODIFIÉ: passer l'intervention complète
                 const startTime = new Date(intervention.start).toLocaleTimeString('fr-FR', {hour: '2-digit', minute: '2-digit'});
                 const endTime = new Date(intervention.end).toLocaleTimeString('fr-FR', {hour: '2-digit', minute: '2-digit'});
                 
+                // NOUVEAU: Ajouter un badge de couleur
+                const couleur = intervention.couleurEquipe || equipesColors.get(intervention.equipe) || '';
+                const colorBadge = couleur ? `<span class="equipe-color-badge ${couleur.toLowerCase()}"></span>` : '';
+                
                 html += `<div class="daily-intervention ${equipeClass}" onclick="showIntervention('${intervention.id}')">
-                    <strong>${intervention.title}</strong> - ${intervention.equipe}<br>
+                    <strong>${intervention.title}</strong> - ${colorBadge}${intervention.equipe}<br>
                     <small>${intervention.categorie} • Durée: ${intervention.duree}h</small><br>
                     ${startTime} - ${endTime}<br>
                     📍 ${intervention.adresse}<br>
@@ -435,15 +484,21 @@ function getInterventionsForDate(dateStr) {
     return interventionsData.filter(intervention => {
         // Vérifier le filtre d'équipe
         if (currentFilter !== 'all') {
-            // Le filtre est maintenant simplement "1", "2", etc.
             const interventionEquipe = intervention.equipe || '';
             
-            // Vérifier si l'intervention appartient à l'équipe filtrée
-            if (!interventionEquipe.includes(`Équipe ${currentFilter}`) && 
-                !interventionEquipe.includes(`équipe ${currentFilter}`) &&
-                !interventionEquipe.includes(` ${currentFilter} `) &&
-                !interventionEquipe.includes(` ${currentFilter}`)) {
-                return false;
+            // Si le filtre est le nom complet de l'équipe
+            if (currentFilter.includes('Équipe')) {
+                if (interventionEquipe !== currentFilter) {
+                    return false;
+                }
+            } else {
+                // Si le filtre est juste un numéro
+                if (!interventionEquipe.includes(`Équipe ${currentFilter}`) && 
+                    !interventionEquipe.includes(`équipe ${currentFilter}`) &&
+                    !interventionEquipe.includes(` ${currentFilter} `) &&
+                    !interventionEquipe.includes(` ${currentFilter}`)) {
+                    return false;
+                }
             }
         }
         
@@ -453,18 +508,35 @@ function getInterventionsForDate(dateStr) {
     });
 }
 
-function getEquipeClass(equipe) {
-    if (!equipe) return '';
-    if (equipe.includes('Rouge') || equipe.includes('1')) return 'equipe-1';
-    if (equipe.includes('Verte') || equipe.includes('2')) return 'equipe-2';
-    if (equipe.includes('Bleue') || equipe.includes('3')) return 'equipe-3';
-    if (equipe.includes('Jaune') || equipe.includes('4')) return 'equipe-4';
-    if (equipe.includes('Violette') || equipe.includes('5')) return 'equipe-5';
-    if (equipe.includes('6')) return 'equipe-6';
-    if (equipe.includes('7')) return 'equipe-7';
-    if (equipe.includes('8')) return 'equipe-8';
-    if (equipe.includes('9')) return 'equipe-9';
-    return '';
+// FONCTION MODIFIÉE: getEquipeClass pour utiliser les couleurs dynamiques
+function getEquipeClass(intervention) {
+    if (!intervention || !intervention.equipe) return 'equipe-default';
+    
+    // Récupérer la couleur depuis l'intervention ou la map des équipes
+    const couleur = intervention.couleurEquipe || equipesColors.get(intervention.equipe) || '';
+    
+    if (couleur) {
+        const couleurClass = `equipe-${couleur.toLowerCase()}`;
+        // Vérifier si la classe existe (couleurs supportées)
+        const couleursSupported = ['bleu', 'vert', 'rouge', 'orange', 'jaune', 'violet', 'rose', 'gris', 'marron'];
+        if (couleursSupported.includes(couleur.toLowerCase())) {
+            return couleurClass;
+        }
+    }
+    
+    // Fallback sur l'ancien système si pas de couleur définie
+    const equipe = intervention.equipe.toLowerCase();
+    
+    if (equipe.includes('équipe 1') || equipe.includes('equipe 1')) return 'equipe-1';
+    if (equipe.includes('équipe 2') || equipe.includes('equipe 2')) return 'equipe-2';
+    if (equipe.includes('équipe 3') || equipe.includes('equipe 3')) return 'equipe-3';
+    if (equipe.includes('équipe 4') || equipe.includes('equipe 4')) return 'equipe-4';
+    if (equipe.includes('équipe 5') || equipe.includes('equipe 5')) return 'equipe-5';
+    if (equipe.includes('équipe 6') || equipe.includes('equipe 6')) return 'equipe-6';
+    if (equipe.includes('équipe 7') || equipe.includes('equipe 7')) return 'equipe-7';
+    if (equipe.includes('équipe 8') || equipe.includes('equipe 8')) return 'equipe-8';
+    
+    return 'equipe-default';
 }
 
 function filterInterventions() {
@@ -473,12 +545,16 @@ function filterInterventions() {
     
     // Debug : compter les interventions par équipe
     if (currentFilter !== 'all') {
-        const filtered = interventionsData.filter(i => 
-            i.equipe && (i.equipe.includes(`Équipe ${currentFilter}`) || 
-                        i.equipe.includes(` ${currentFilter} `) ||
-                        i.equipe.includes(` ${currentFilter}`))
-        );
-        console.log(`Interventions pour Équipe ${currentFilter}:`, filtered.length);
+        const filtered = interventionsData.filter(i => {
+            if (currentFilter.includes('Équipe')) {
+                return i.equipe === currentFilter;
+            } else {
+                return i.equipe && (i.equipe.includes(`Équipe ${currentFilter}`) || 
+                            i.equipe.includes(` ${currentFilter} `) ||
+                            i.equipe.includes(` ${currentFilter}`));
+            }
+        });
+        console.log(`Interventions pour ${currentFilter}:`, filtered.length);
         console.log('Exemples:', filtered.slice(0, 3));
     }
     
@@ -529,6 +605,10 @@ function showIntervention(id) {
     const startDate = new Date(intervention.start);
     const endDate = intervention.end ? new Date(intervention.end) : null;
     
+    // NOUVEAU: Ajouter un badge de couleur dans les détails
+    const couleur = intervention.couleurEquipe || equipesColors.get(intervention.equipe) || '';
+    const colorBadge = couleur ? `<span class="equipe-color-badge ${couleur.toLowerCase()}"></span>` : '';
+    
     let html = `
         <div class="info-row">
             <div class="info-label">Client :</div>
@@ -559,7 +639,7 @@ function showIntervention(id) {
         </div>
         <div class="info-row">
             <div class="info-label">Équipe :</div>
-            <div class="info-value">${intervention.equipe}</div>
+            <div class="info-value">${colorBadge}${intervention.equipe}</div>
         </div>
         <div class="info-row">
             <div class="info-label">Adresse :</div>
