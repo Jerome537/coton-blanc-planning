@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "lastUpdate": "2025-07-17T05:59:53.423Z",
+    "lastUpdate": "2025-07-17T06:07:29.344Z",
     "totalInterventions": 0,
     "interventionsAvecDates": 0,
     "interventionsSansDates": 0,
     "totalEquipes": 0,
     "source": "Notion via n8n",
-    "workflowVersion": "v3.1"
+    "workflowVersion": "v3.2"
   },
   "interventions": [],
   "equipes": [],
