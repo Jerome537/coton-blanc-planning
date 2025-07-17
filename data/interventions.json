@@ -1,4 +1,14 @@
 {
-  "lastUpdate": "2025-07-14T00:00:00Z",
-  "interventions": []
+  "lastUpdate": "2025-07-16T00:00:00.000Z",
+  "totalInterventions": 0,
+  "interventions": [],
+  "metadata": {
+    "generatedBy": "n8n-workflow-coton-blanc",
+    "version": "2.1",
+    "timezone": "Pacific/Tahiti",
+    "notionDatabases": {
+      "interventions": "1de543b1-13ef-802c-85f4-f8b0918a6373",
+      "equipes": "1d8543b1-13ef-8030-8dc9-f2c5fb12646d"
+    }
+  }
 }
