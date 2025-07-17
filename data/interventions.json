@@ -1,6 +1,8 @@
 {
-  "lastUpdate": "2025-07-17T05:20:07.601Z",
+  "lastUpdate": "2025-07-17T05:25:44.847Z",
   "totalInterventions": 0,
+  "interventionsAvecDates": 0,
+  "interventionsSansDates": 0,
   "totalEquipes": 0,
   "interventions": [],
   "equipes": [],
@@ -13,11 +15,10 @@
       "equipes": "1d8543b1-13ef-8030-8dc9-f2c5fb12646d"
     },
     "processing": {
-      "totalItemsProcessed": 1,
+      "totalItems": 1,
       "interventionsFound": 0,
       "equipesFound": 0,
-      "interventionsWithDates": 0,
-      "interventionsWithoutDates": 0
+      "interventionsAvecDates": 0
     }
   }
 }
