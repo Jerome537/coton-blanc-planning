@@ -1,13 +1,12 @@
 {
   "metadata": {
-    "lastUpdate": "2025-07-18T01:25:10.040Z",
+    "lastUpdate": "2025-07-18T01:25:36.424Z",
     "totalInterventions": 5,
     "interventionsAvecDates": 4,
     "interventionsSansDates": 1,
     "totalEquipes": 10,
     "source": "Notion via n8n",
-    "workflowVersion": "v8.0-COLORS",
-    "triggerType": "test"
+    "workflowVersion": "v8.0-COLORS"
   },
   "interventions": [
     {
