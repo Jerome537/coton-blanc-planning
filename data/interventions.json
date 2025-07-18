@@ -1,12 +1,13 @@
 {
   "metadata": {
-    "lastUpdate": "2025-07-17T16:41:33.563Z",
-    "totalInterventions": 4,
-    "interventionsAvecDates": 3,
+    "lastUpdate": "2025-07-18T01:24:42.207Z",
+    "totalInterventions": 5,
+    "interventionsAvecDates": 4,
     "interventionsSansDates": 1,
     "totalEquipes": 10,
     "source": "Notion via n8n",
-    "workflowVersion": "v8.0-COLORS"
+    "workflowVersion": "v8.0-COLORS",
+    "triggerType": "test"
   },
   "interventions": [
     {
@@ -147,6 +148,48 @@
       "satisfaction": null,
       "url": "https://www.notion.so/ACADEMIE-FAYN-de-14-00-14-45-22e543b113ef81fd8bf2ee60368b04d0",
       "notionUrl": "https://notion.so/22e543b113ef81fd8bf2ee60368b04d0",
+      "type": "intervention"
+    },
+    {
+      "id": "234543b1-13ef-80a4-abe1-f3f16753d6bf",
+      "title": "Nouvelle intervention",
+      "dateDebut": "2025-07-19T09:00:00.000-10:00",
+      "dateFin": "2025-07-19T09:00:00.000-10:00",
+      "dateDebutFormatee": "19/07/2025 à 09:00",
+      "dureePrevu": 0.15,
+      "equipe": "Équipe 5",
+      "couleurEquipe": "rouge",
+      "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani ,TEST  Un",
+      "equipeIds": [
+        "1d8543b1-13ef-805a-877d-de5247d73914"
+      ],
+      "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+      "clientExistantIds": [
+        "1b7543b1-13ef-80f8-8c4e-e36892655b44"
+      ],
+      "emailClient": "global@global-patrimoine.pf",
+      "telephoneClient": "40 420 888",
+      "commune": "",
+      "communeIds": [],
+      "adresseSiege": "CC Le Lotus ",
+      "adresseIntervention": "centre commercial du lotus ",
+      "coordonneesGPS": "-17.5892969,-149.6953548",
+      "sousAffichage": "Tel: 40 420 888",
+      "categoriePrestation": "",
+      "categoriePrestationIds": [],
+      "materielNecessaire": [
+        "Échafaudage"
+      ],
+      "materielSpecifique": "Échafaudage",
+      "instruction": "Bien orienter les coquillages",
+      "statutValidationBL": false,
+      "statutValidationDevis": false,
+      "blLien": "",
+      "recurrent": false,
+      "source": "",
+      "satisfaction": null,
+      "url": "https://www.notion.so/Nouvelle-intervention-234543b113ef80a4abe1f3f16753d6bf",
+      "notionUrl": "https://notion.so/234543b113ef80a4abe1f3f16753d6bf",
       "type": "intervention"
     },
     {
@@ -332,7 +375,8 @@
         "1b7543b1-13ef-8096-bf72-ee2a6c5a6182"
       ],
       "interventions": [
-        "22e543b1-13ef-8106-8561-f689a46176fe"
+        "22e543b1-13ef-8106-8561-f689a46176fe",
+        "234543b1-13ef-80a4-abe1-f3f16753d6bf"
       ],
       "url": "https://www.notion.so/quipe-5-1d8543b113ef805a877dde5247d73914",
       "notionUrl": "https://notion.so/1d8543b113ef805a877dde5247d73914",
@@ -579,6 +623,48 @@
         "url": "https://www.notion.so/ACADEMIE-FAYN-de-14-00-14-45-22e543b113ef81fd8bf2ee60368b04d0",
         "notionUrl": "https://notion.so/22e543b113ef81fd8bf2ee60368b04d0",
         "type": "intervention"
+      },
+      {
+        "id": "234543b1-13ef-80a4-abe1-f3f16753d6bf",
+        "title": "Nouvelle intervention",
+        "dateDebut": "2025-07-19T09:00:00.000-10:00",
+        "dateFin": "2025-07-19T09:00:00.000-10:00",
+        "dateDebutFormatee": "19/07/2025 à 09:00",
+        "dureePrevu": 0.15,
+        "equipe": "Équipe 5",
+        "couleurEquipe": "rouge",
+        "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani ,TEST  Un",
+        "equipeIds": [
+          "1d8543b1-13ef-805a-877d-de5247d73914"
+        ],
+        "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+        "clientExistantIds": [
+          "1b7543b1-13ef-80f8-8c4e-e36892655b44"
+        ],
+        "emailClient": "global@global-patrimoine.pf",
+        "telephoneClient": "40 420 888",
+        "commune": "",
+        "communeIds": [],
+        "adresseSiege": "CC Le Lotus ",
+        "adresseIntervention": "centre commercial du lotus ",
+        "coordonneesGPS": "-17.5892969,-149.6953548",
+        "sousAffichage": "Tel: 40 420 888",
+        "categoriePrestation": "",
+        "categoriePrestationIds": [],
+        "materielNecessaire": [
+          "Échafaudage"
+        ],
+        "materielSpecifique": "Échafaudage",
+        "instruction": "Bien orienter les coquillages",
+        "statutValidationBL": false,
+        "statutValidationDevis": false,
+        "blLien": "",
+        "recurrent": false,
+        "source": "",
+        "satisfaction": null,
+        "url": "https://www.notion.so/Nouvelle-intervention-234543b113ef80a4abe1f3f16753d6bf",
+        "notionUrl": "https://notion.so/234543b113ef80a4abe1f3f16753d6bf",
+        "type": "intervention"
       }
     ],
     "sansDates": [
@@ -758,9 +844,51 @@
             "url": "https://www.notion.so/BEV-CO-de-12-00-12-30-22e543b113ef81068561f689a46176fe",
             "notionUrl": "https://notion.so/22e543b113ef81068561f689a46176fe",
             "type": "intervention"
+          },
+          {
+            "id": "234543b1-13ef-80a4-abe1-f3f16753d6bf",
+            "title": "Nouvelle intervention",
+            "dateDebut": "2025-07-19T09:00:00.000-10:00",
+            "dateFin": "2025-07-19T09:00:00.000-10:00",
+            "dateDebutFormatee": "19/07/2025 à 09:00",
+            "dureePrevu": 0.15,
+            "equipe": "Équipe 5",
+            "couleurEquipe": "rouge",
+            "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani ,TEST  Un",
+            "equipeIds": [
+              "1d8543b1-13ef-805a-877d-de5247d73914"
+            ],
+            "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+            "clientExistantIds": [
+              "1b7543b1-13ef-80f8-8c4e-e36892655b44"
+            ],
+            "emailClient": "global@global-patrimoine.pf",
+            "telephoneClient": "40 420 888",
+            "commune": "",
+            "communeIds": [],
+            "adresseSiege": "CC Le Lotus ",
+            "adresseIntervention": "centre commercial du lotus ",
+            "coordonneesGPS": "-17.5892969,-149.6953548",
+            "sousAffichage": "Tel: 40 420 888",
+            "categoriePrestation": "",
+            "categoriePrestationIds": [],
+            "materielNecessaire": [
+              "Échafaudage"
+            ],
+            "materielSpecifique": "Échafaudage",
+            "instruction": "Bien orienter les coquillages",
+            "statutValidationBL": false,
+            "statutValidationDevis": false,
+            "blLien": "",
+            "recurrent": false,
+            "source": "",
+            "satisfaction": null,
+            "url": "https://www.notion.so/Nouvelle-intervention-234543b113ef80a4abe1f3f16753d6bf",
+            "notionUrl": "https://notion.so/234543b113ef80a4abe1f3f16753d6bf",
+            "type": "intervention"
           }
         ],
-        "total": 1,
+        "total": 2,
         "equipeDetails": {
           "id": "1d8543b1-13ef-805a-877d-de5247d73914",
           "nom": "Équipe 5",
@@ -780,7 +908,8 @@
             "1b7543b1-13ef-8096-bf72-ee2a6c5a6182"
           ],
           "interventions": [
-            "22e543b1-13ef-8106-8561-f689a46176fe"
+            "22e543b1-13ef-8106-8561-f689a46176fe",
+            "234543b1-13ef-80a4-abe1-f3f16753d6bf"
           ],
           "url": "https://www.notion.so/quipe-5-1d8543b113ef805a877dde5247d73914",
           "notionUrl": "https://notion.so/1d8543b113ef805a877dde5247d73914",
@@ -956,8 +1085,8 @@
     }
   },
   "stats": {
-    "totalInterventions": 4,
-    "interventionsAvecDates": 3,
+    "totalInterventions": 5,
+    "interventionsAvecDates": 4,
     "interventionsSansDates": 1,
     "totalEquipes": 10,
     "equipesAvecInterventions": 4,
@@ -980,10 +1109,16 @@
         "client": "ACADEMIE FAYN",
         "equipe": "Équipe 7",
         "commune": "Papeete"
+      },
+      {
+        "date": "2025-07-19T09:00:00.000-10:00",
+        "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+        "equipe": "Équipe 5",
+        "commune": ""
       }
     ],
     "interventionsParMois": {
-      "juillet 2025": 3,
+      "juillet 2025": 4,
       "août 2025": 0,
       "septembre 2025": 0
     }
