@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdate": "2025-07-19T01:30:39.955Z",
+    "lastUpdate": "2025-07-19T02:00:45.760Z",
     "totalInterventions": 5,
     "interventionsAvecDates": 4,
     "interventionsSansDates": 1,
@@ -159,7 +159,7 @@
       "dureePrevu": 0.15,
       "equipe": "Équipe 5",
       "couleurEquipe": "rouge",
-      "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani ,TEST  Un",
+      "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
       "equipeIds": [
         "1d8543b1-13ef-805a-877d-de5247d73914"
       ],
@@ -633,7 +633,7 @@
         "dureePrevu": 0.15,
         "equipe": "Équipe 5",
         "couleurEquipe": "rouge",
-        "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani ,TEST  Un",
+        "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
         "equipeIds": [
           "1d8543b1-13ef-805a-877d-de5247d73914"
         ],
@@ -854,7 +854,7 @@
             "dureePrevu": 0.15,
             "equipe": "Équipe 5",
             "couleurEquipe": "rouge",
-            "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani ,TEST  Un",
+            "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
             "equipeIds": [
               "1d8543b1-13ef-805a-877d-de5247d73914"
             ],
