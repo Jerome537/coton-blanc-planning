@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lastUpdate": "2025-07-22T00:00:43.820Z",
-    "totalInterventions": 5,
-    "interventionsAvecDates": 4,
+    "lastUpdate": "2025-07-22T00:30:41.661Z",
+    "totalInterventions": 6,
+    "interventionsAvecDates": 5,
     "interventionsSansDates": 1,
     "totalEquipes": 10,
     "source": "Notion via n8n",
@@ -148,6 +148,46 @@
       "satisfaction": null,
       "url": "https://www.notion.so/ACADEMIE-FAYN-de-14-00-14-45-22e543b113ef81fd8bf2ee60368b04d0",
       "notionUrl": "https://notion.so/22e543b113ef81fd8bf2ee60368b04d0",
+      "type": "intervention"
+    },
+    {
+      "id": "238543b1-13ef-80fb-86c0-d33994c28b83",
+      "title": "GLOBAL PATRIMOINE de 09:00 à 09:00",
+      "dateDebut": "2025-07-19T09:00:00.000-10:00",
+      "dateFin": "2025-07-19T09:00:00.000-10:00",
+      "dateDebutFormatee": "19/07/2025 à 09:00",
+      "dureePrevu": 0.15,
+      "equipe": "Équipe 5",
+      "couleurEquipe": "rouge",
+      "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
+      "equipeIds": [
+        "1d8543b1-13ef-805a-877d-de5247d73914"
+      ],
+      "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+      "clientExistantIds": [
+        "1b7543b1-13ef-80f8-8c4e-e36892655b44"
+      ],
+      "emailClient": "global@global-patrimoine.pf",
+      "telephoneClient": "40 420 888",
+      "commune": "",
+      "communeIds": [],
+      "adresseSiege": "CC Le Lotus ",
+      "adresseIntervention": "centre commercial du lotus ",
+      "coordonneesGPS": "-17.5892969,-149.6953548",
+      "sousAffichage": "Tel: 40 420 888",
+      "categoriePrestation": "",
+      "categoriePrestationIds": [],
+      "materielNecessaire": [],
+      "materielSpecifique": "",
+      "instruction": "Bien orienter les coquillages",
+      "statutValidationBL": false,
+      "statutValidationDevis": false,
+      "blLien": "",
+      "recurrent": false,
+      "source": "",
+      "satisfaction": null,
+      "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80fb86c0d33994c28b83",
+      "notionUrl": "https://notion.so/238543b113ef80fb86c0d33994c28b83",
       "type": "intervention"
     },
     {
@@ -376,7 +416,8 @@
       ],
       "interventions": [
         "22e543b1-13ef-8106-8561-f689a46176fe",
-        "234543b1-13ef-80a4-abe1-f3f16753d6bf"
+        "234543b1-13ef-80a4-abe1-f3f16753d6bf",
+        "238543b1-13ef-80fb-86c0-d33994c28b83"
       ],
       "url": "https://www.notion.so/quipe-5-1d8543b113ef805a877dde5247d73914",
       "notionUrl": "https://notion.so/1d8543b113ef805a877dde5247d73914",
@@ -626,6 +667,46 @@
         "type": "intervention"
       },
       {
+        "id": "238543b1-13ef-80fb-86c0-d33994c28b83",
+        "title": "GLOBAL PATRIMOINE de 09:00 à 09:00",
+        "dateDebut": "2025-07-19T09:00:00.000-10:00",
+        "dateFin": "2025-07-19T09:00:00.000-10:00",
+        "dateDebutFormatee": "19/07/2025 à 09:00",
+        "dureePrevu": 0.15,
+        "equipe": "Équipe 5",
+        "couleurEquipe": "rouge",
+        "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
+        "equipeIds": [
+          "1d8543b1-13ef-805a-877d-de5247d73914"
+        ],
+        "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+        "clientExistantIds": [
+          "1b7543b1-13ef-80f8-8c4e-e36892655b44"
+        ],
+        "emailClient": "global@global-patrimoine.pf",
+        "telephoneClient": "40 420 888",
+        "commune": "",
+        "communeIds": [],
+        "adresseSiege": "CC Le Lotus ",
+        "adresseIntervention": "centre commercial du lotus ",
+        "coordonneesGPS": "-17.5892969,-149.6953548",
+        "sousAffichage": "Tel: 40 420 888",
+        "categoriePrestation": "",
+        "categoriePrestationIds": [],
+        "materielNecessaire": [],
+        "materielSpecifique": "",
+        "instruction": "Bien orienter les coquillages",
+        "statutValidationBL": false,
+        "statutValidationDevis": false,
+        "blLien": "",
+        "recurrent": false,
+        "source": "",
+        "satisfaction": null,
+        "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80fb86c0d33994c28b83",
+        "notionUrl": "https://notion.so/238543b113ef80fb86c0d33994c28b83",
+        "type": "intervention"
+      },
+      {
         "id": "234543b1-13ef-80a4-abe1-f3f16753d6bf",
         "title": "Nouvelle intervention",
         "dateDebut": "2025-07-19T09:00:00.000-10:00",
@@ -847,6 +928,46 @@
             "type": "intervention"
           },
           {
+            "id": "238543b1-13ef-80fb-86c0-d33994c28b83",
+            "title": "GLOBAL PATRIMOINE de 09:00 à 09:00",
+            "dateDebut": "2025-07-19T09:00:00.000-10:00",
+            "dateFin": "2025-07-19T09:00:00.000-10:00",
+            "dateDebutFormatee": "19/07/2025 à 09:00",
+            "dureePrevu": 0.15,
+            "equipe": "Équipe 5",
+            "couleurEquipe": "rouge",
+            "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
+            "equipeIds": [
+              "1d8543b1-13ef-805a-877d-de5247d73914"
+            ],
+            "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+            "clientExistantIds": [
+              "1b7543b1-13ef-80f8-8c4e-e36892655b44"
+            ],
+            "emailClient": "global@global-patrimoine.pf",
+            "telephoneClient": "40 420 888",
+            "commune": "",
+            "communeIds": [],
+            "adresseSiege": "CC Le Lotus ",
+            "adresseIntervention": "centre commercial du lotus ",
+            "coordonneesGPS": "-17.5892969,-149.6953548",
+            "sousAffichage": "Tel: 40 420 888",
+            "categoriePrestation": "",
+            "categoriePrestationIds": [],
+            "materielNecessaire": [],
+            "materielSpecifique": "",
+            "instruction": "Bien orienter les coquillages",
+            "statutValidationBL": false,
+            "statutValidationDevis": false,
+            "blLien": "",
+            "recurrent": false,
+            "source": "",
+            "satisfaction": null,
+            "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80fb86c0d33994c28b83",
+            "notionUrl": "https://notion.so/238543b113ef80fb86c0d33994c28b83",
+            "type": "intervention"
+          },
+          {
             "id": "234543b1-13ef-80a4-abe1-f3f16753d6bf",
             "title": "Nouvelle intervention",
             "dateDebut": "2025-07-19T09:00:00.000-10:00",
@@ -889,7 +1010,7 @@
             "type": "intervention"
           }
         ],
-        "total": 2,
+        "total": 3,
         "equipeDetails": {
           "id": "1d8543b1-13ef-805a-877d-de5247d73914",
           "nom": "Équipe 5",
@@ -910,7 +1031,8 @@
           ],
           "interventions": [
             "22e543b1-13ef-8106-8561-f689a46176fe",
-            "234543b1-13ef-80a4-abe1-f3f16753d6bf"
+            "234543b1-13ef-80a4-abe1-f3f16753d6bf",
+            "238543b1-13ef-80fb-86c0-d33994c28b83"
           ],
           "url": "https://www.notion.so/quipe-5-1d8543b113ef805a877dde5247d73914",
           "notionUrl": "https://notion.so/1d8543b113ef805a877dde5247d73914",
@@ -1087,8 +1209,8 @@
     }
   },
   "stats": {
-    "totalInterventions": 5,
-    "interventionsAvecDates": 4,
+    "totalInterventions": 6,
+    "interventionsAvecDates": 5,
     "interventionsSansDates": 1,
     "totalEquipes": 10,
     "equipesAvecInterventions": 4,
@@ -1117,10 +1239,16 @@
         "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
         "equipe": "Équipe 5",
         "commune": ""
+      },
+      {
+        "date": "2025-07-19T09:00:00.000-10:00",
+        "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+        "equipe": "Équipe 5",
+        "commune": ""
       }
     ],
     "interventionsParMois": {
-      "juillet 2025": 4,
+      "juillet 2025": 5,
       "août 2025": 0,
       "septembre 2025": 0
     }
