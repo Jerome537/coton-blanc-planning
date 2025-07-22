@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lastUpdate": "2025-07-22T21:30:42.195Z",
-    "totalInterventions": 5,
-    "interventionsAvecDates": 4,
+    "lastUpdate": "2025-07-22T22:00:41.836Z",
+    "totalInterventions": 7,
+    "interventionsAvecDates": 6,
     "interventionsSansDates": 1,
     "totalEquipes": 10,
     "source": "Notion via n8n",
@@ -191,6 +191,90 @@
       "type": "intervention"
     },
     {
+      "id": "238543b1-13ef-803b-a65b-e18b6b08916b",
+      "title": "ACADEMIE FAYN de 14:00 à 14:45",
+      "dateDebut": "2025-08-13T14:00:00.000-10:00",
+      "dateFin": "2025-08-13T14:45:00.000-10:00",
+      "dateDebutFormatee": "13/08/2025 à 14:00",
+      "dureePrevu": 45,
+      "equipe": "Équipe 7",
+      "couleurEquipe": "bleu",
+      "membresIntervenants": "FLORES Takau ,AHINI Purea ,FLORES Dalila",
+      "equipeIds": [
+        "1d8543b1-13ef-8039-8872-d1e80f0f13e8"
+      ],
+      "client": "ACADEMIE FAYN",
+      "clientExistantIds": [
+        "1b7543b1-13ef-802e-9cdf-d77712c86e58"
+      ],
+      "emailClient": "anniefayn@gmail.com",
+      "telephoneClient": "89 53 11 48",
+      "commune": "Papeete",
+      "communeIds": [
+        "1de543b1-13ef-8099-9003-d0075af9eb6c"
+      ],
+      "adresseSiege": "Rue des Remparts",
+      "adresseIntervention": "",
+      "coordonneesGPS": "-17.5365009,-149.5682808,17z",
+      "sousAffichage": "Papeete Tel: 89 53 11 48",
+      "categoriePrestation": "Libération logement",
+      "categoriePrestationIds": [
+        "1de543b1-13ef-80f5-8559-ea63626a3b7c"
+      ],
+      "materielNecessaire": [],
+      "materielSpecifique": "",
+      "instruction": "olj",
+      "statutValidationBL": false,
+      "statutValidationDevis": false,
+      "blLien": "",
+      "recurrent": false,
+      "source": "",
+      "satisfaction": null,
+      "url": "https://www.notion.so/ACADEMIE-FAYN-de-14-00-14-45-238543b113ef803ba65be18b6b08916b",
+      "notionUrl": "https://notion.so/238543b113ef803ba65be18b6b08916b",
+      "type": "intervention"
+    },
+    {
+      "id": "238543b1-13ef-8020-9d13-eef4ddf675f8",
+      "title": "GLOBAL PATRIMOINE de 09:00 à 09:00",
+      "dateDebut": "2025-10-18T09:00:00.000-10:00",
+      "dateFin": "2025-10-18T09:00:00.000-10:00",
+      "dateDebutFormatee": "18/10/2025 à 09:00",
+      "dureePrevu": 0.15,
+      "equipe": "Équipe 5",
+      "couleurEquipe": "rouge",
+      "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
+      "equipeIds": [
+        "1d8543b1-13ef-805a-877d-de5247d73914"
+      ],
+      "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+      "clientExistantIds": [
+        "1b7543b1-13ef-80f8-8c4e-e36892655b44"
+      ],
+      "emailClient": "global@global-patrimoine.pf",
+      "telephoneClient": "40 420 888",
+      "commune": "",
+      "communeIds": [],
+      "adresseSiege": "CC Le Lotus ",
+      "adresseIntervention": "centre commercial du lotus ",
+      "coordonneesGPS": "-17.5892969,-149.6953548",
+      "sousAffichage": "Tel: 40 420 888",
+      "categoriePrestation": "",
+      "categoriePrestationIds": [],
+      "materielNecessaire": [],
+      "materielSpecifique": "",
+      "instruction": "Bien orienter les coquillages",
+      "statutValidationBL": false,
+      "statutValidationDevis": false,
+      "blLien": "",
+      "recurrent": false,
+      "source": "",
+      "satisfaction": null,
+      "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80209d13eef4ddf675f8",
+      "notionUrl": "https://notion.so/238543b113ef80209d13eef4ddf675f8",
+      "type": "intervention"
+    },
+    {
       "id": "22e543b1-13ef-808e-8fd2-ed0985ff388a",
       "title": "Nouvelle intervention",
       "dateDebut": null,
@@ -323,7 +407,8 @@
         "1b7543b1-13ef-80cd-9192-e7ef220a9342"
       ],
       "interventions": [
-        "22e543b1-13ef-81fd-8bf2-ee60368b04d0"
+        "22e543b1-13ef-81fd-8bf2-ee60368b04d0",
+        "238543b1-13ef-803b-a65b-e18b6b08916b"
       ],
       "url": "https://www.notion.so/quipe-7-1d8543b113ef80398872d1e80f0f13e8",
       "notionUrl": "https://notion.so/1d8543b113ef80398872d1e80f0f13e8",
@@ -374,7 +459,8 @@
       ],
       "interventions": [
         "22e543b1-13ef-8106-8561-f689a46176fe",
-        "238543b1-13ef-80fb-86c0-d33994c28b83"
+        "238543b1-13ef-80fb-86c0-d33994c28b83",
+        "238543b1-13ef-8020-9d13-eef4ddf675f8"
       ],
       "url": "https://www.notion.so/quipe-5-1d8543b113ef805a877dde5247d73914",
       "notionUrl": "https://notion.so/1d8543b113ef805a877dde5247d73914",
@@ -662,6 +748,90 @@
         "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80fb86c0d33994c28b83",
         "notionUrl": "https://notion.so/238543b113ef80fb86c0d33994c28b83",
         "type": "intervention"
+      },
+      {
+        "id": "238543b1-13ef-803b-a65b-e18b6b08916b",
+        "title": "ACADEMIE FAYN de 14:00 à 14:45",
+        "dateDebut": "2025-08-13T14:00:00.000-10:00",
+        "dateFin": "2025-08-13T14:45:00.000-10:00",
+        "dateDebutFormatee": "13/08/2025 à 14:00",
+        "dureePrevu": 45,
+        "equipe": "Équipe 7",
+        "couleurEquipe": "bleu",
+        "membresIntervenants": "FLORES Takau ,AHINI Purea ,FLORES Dalila",
+        "equipeIds": [
+          "1d8543b1-13ef-8039-8872-d1e80f0f13e8"
+        ],
+        "client": "ACADEMIE FAYN",
+        "clientExistantIds": [
+          "1b7543b1-13ef-802e-9cdf-d77712c86e58"
+        ],
+        "emailClient": "anniefayn@gmail.com",
+        "telephoneClient": "89 53 11 48",
+        "commune": "Papeete",
+        "communeIds": [
+          "1de543b1-13ef-8099-9003-d0075af9eb6c"
+        ],
+        "adresseSiege": "Rue des Remparts",
+        "adresseIntervention": "",
+        "coordonneesGPS": "-17.5365009,-149.5682808,17z",
+        "sousAffichage": "Papeete Tel: 89 53 11 48",
+        "categoriePrestation": "Libération logement",
+        "categoriePrestationIds": [
+          "1de543b1-13ef-80f5-8559-ea63626a3b7c"
+        ],
+        "materielNecessaire": [],
+        "materielSpecifique": "",
+        "instruction": "olj",
+        "statutValidationBL": false,
+        "statutValidationDevis": false,
+        "blLien": "",
+        "recurrent": false,
+        "source": "",
+        "satisfaction": null,
+        "url": "https://www.notion.so/ACADEMIE-FAYN-de-14-00-14-45-238543b113ef803ba65be18b6b08916b",
+        "notionUrl": "https://notion.so/238543b113ef803ba65be18b6b08916b",
+        "type": "intervention"
+      },
+      {
+        "id": "238543b1-13ef-8020-9d13-eef4ddf675f8",
+        "title": "GLOBAL PATRIMOINE de 09:00 à 09:00",
+        "dateDebut": "2025-10-18T09:00:00.000-10:00",
+        "dateFin": "2025-10-18T09:00:00.000-10:00",
+        "dateDebutFormatee": "18/10/2025 à 09:00",
+        "dureePrevu": 0.15,
+        "equipe": "Équipe 5",
+        "couleurEquipe": "rouge",
+        "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
+        "equipeIds": [
+          "1d8543b1-13ef-805a-877d-de5247d73914"
+        ],
+        "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+        "clientExistantIds": [
+          "1b7543b1-13ef-80f8-8c4e-e36892655b44"
+        ],
+        "emailClient": "global@global-patrimoine.pf",
+        "telephoneClient": "40 420 888",
+        "commune": "",
+        "communeIds": [],
+        "adresseSiege": "CC Le Lotus ",
+        "adresseIntervention": "centre commercial du lotus ",
+        "coordonneesGPS": "-17.5892969,-149.6953548",
+        "sousAffichage": "Tel: 40 420 888",
+        "categoriePrestation": "",
+        "categoriePrestationIds": [],
+        "materielNecessaire": [],
+        "materielSpecifique": "",
+        "instruction": "Bien orienter les coquillages",
+        "statutValidationBL": false,
+        "statutValidationDevis": false,
+        "blLien": "",
+        "recurrent": false,
+        "source": "",
+        "satisfaction": null,
+        "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80209d13eef4ddf675f8",
+        "notionUrl": "https://notion.so/238543b113ef80209d13eef4ddf675f8",
+        "type": "intervention"
       }
     ],
     "sansDates": [
@@ -881,9 +1051,49 @@
             "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80fb86c0d33994c28b83",
             "notionUrl": "https://notion.so/238543b113ef80fb86c0d33994c28b83",
             "type": "intervention"
+          },
+          {
+            "id": "238543b1-13ef-8020-9d13-eef4ddf675f8",
+            "title": "GLOBAL PATRIMOINE de 09:00 à 09:00",
+            "dateDebut": "2025-10-18T09:00:00.000-10:00",
+            "dateFin": "2025-10-18T09:00:00.000-10:00",
+            "dateDebutFormatee": "18/10/2025 à 09:00",
+            "dureePrevu": 0.15,
+            "equipe": "Équipe 5",
+            "couleurEquipe": "rouge",
+            "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
+            "equipeIds": [
+              "1d8543b1-13ef-805a-877d-de5247d73914"
+            ],
+            "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+            "clientExistantIds": [
+              "1b7543b1-13ef-80f8-8c4e-e36892655b44"
+            ],
+            "emailClient": "global@global-patrimoine.pf",
+            "telephoneClient": "40 420 888",
+            "commune": "",
+            "communeIds": [],
+            "adresseSiege": "CC Le Lotus ",
+            "adresseIntervention": "centre commercial du lotus ",
+            "coordonneesGPS": "-17.5892969,-149.6953548",
+            "sousAffichage": "Tel: 40 420 888",
+            "categoriePrestation": "",
+            "categoriePrestationIds": [],
+            "materielNecessaire": [],
+            "materielSpecifique": "",
+            "instruction": "Bien orienter les coquillages",
+            "statutValidationBL": false,
+            "statutValidationDevis": false,
+            "blLien": "",
+            "recurrent": false,
+            "source": "",
+            "satisfaction": null,
+            "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80209d13eef4ddf675f8",
+            "notionUrl": "https://notion.so/238543b113ef80209d13eef4ddf675f8",
+            "type": "intervention"
           }
         ],
-        "total": 2,
+        "total": 3,
         "equipeDetails": {
           "id": "1d8543b1-13ef-805a-877d-de5247d73914",
           "nom": "Équipe 5",
@@ -904,7 +1114,8 @@
           ],
           "interventions": [
             "22e543b1-13ef-8106-8561-f689a46176fe",
-            "238543b1-13ef-80fb-86c0-d33994c28b83"
+            "238543b1-13ef-80fb-86c0-d33994c28b83",
+            "238543b1-13ef-8020-9d13-eef4ddf675f8"
           ],
           "url": "https://www.notion.so/quipe-5-1d8543b113ef805a877dde5247d73914",
           "notionUrl": "https://notion.so/1d8543b113ef805a877dde5247d73914",
@@ -960,9 +1171,53 @@
             "url": "https://www.notion.so/ACADEMIE-FAYN-de-14-00-14-45-22e543b113ef81fd8bf2ee60368b04d0",
             "notionUrl": "https://notion.so/22e543b113ef81fd8bf2ee60368b04d0",
             "type": "intervention"
+          },
+          {
+            "id": "238543b1-13ef-803b-a65b-e18b6b08916b",
+            "title": "ACADEMIE FAYN de 14:00 à 14:45",
+            "dateDebut": "2025-08-13T14:00:00.000-10:00",
+            "dateFin": "2025-08-13T14:45:00.000-10:00",
+            "dateDebutFormatee": "13/08/2025 à 14:00",
+            "dureePrevu": 45,
+            "equipe": "Équipe 7",
+            "couleurEquipe": "bleu",
+            "membresIntervenants": "FLORES Takau ,AHINI Purea ,FLORES Dalila",
+            "equipeIds": [
+              "1d8543b1-13ef-8039-8872-d1e80f0f13e8"
+            ],
+            "client": "ACADEMIE FAYN",
+            "clientExistantIds": [
+              "1b7543b1-13ef-802e-9cdf-d77712c86e58"
+            ],
+            "emailClient": "anniefayn@gmail.com",
+            "telephoneClient": "89 53 11 48",
+            "commune": "Papeete",
+            "communeIds": [
+              "1de543b1-13ef-8099-9003-d0075af9eb6c"
+            ],
+            "adresseSiege": "Rue des Remparts",
+            "adresseIntervention": "",
+            "coordonneesGPS": "-17.5365009,-149.5682808,17z",
+            "sousAffichage": "Papeete Tel: 89 53 11 48",
+            "categoriePrestation": "Libération logement",
+            "categoriePrestationIds": [
+              "1de543b1-13ef-80f5-8559-ea63626a3b7c"
+            ],
+            "materielNecessaire": [],
+            "materielSpecifique": "",
+            "instruction": "olj",
+            "statutValidationBL": false,
+            "statutValidationDevis": false,
+            "blLien": "",
+            "recurrent": false,
+            "source": "",
+            "satisfaction": null,
+            "url": "https://www.notion.so/ACADEMIE-FAYN-de-14-00-14-45-238543b113ef803ba65be18b6b08916b",
+            "notionUrl": "https://notion.so/238543b113ef803ba65be18b6b08916b",
+            "type": "intervention"
           }
         ],
-        "total": 1,
+        "total": 2,
         "equipeDetails": {
           "id": "1d8543b1-13ef-8039-8872-d1e80f0f13e8",
           "nom": "Équipe 7",
@@ -988,7 +1243,8 @@
             "1b7543b1-13ef-80cd-9192-e7ef220a9342"
           ],
           "interventions": [
-            "22e543b1-13ef-81fd-8bf2-ee60368b04d0"
+            "22e543b1-13ef-81fd-8bf2-ee60368b04d0",
+            "238543b1-13ef-803b-a65b-e18b6b08916b"
           ],
           "url": "https://www.notion.so/quipe-7-1d8543b113ef80398872d1e80f0f13e8",
           "notionUrl": "https://notion.so/1d8543b113ef80398872d1e80f0f13e8",
@@ -1081,8 +1337,8 @@
     }
   },
   "stats": {
-    "totalInterventions": 5,
-    "interventionsAvecDates": 4,
+    "totalInterventions": 7,
+    "interventionsAvecDates": 6,
     "interventionsSansDates": 1,
     "totalEquipes": 10,
     "equipesAvecInterventions": 4,
@@ -1111,11 +1367,17 @@
         "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
         "equipe": "Équipe 5",
         "commune": ""
+      },
+      {
+        "date": "2025-08-13T14:00:00.000-10:00",
+        "client": "ACADEMIE FAYN",
+        "equipe": "Équipe 7",
+        "commune": "Papeete"
       }
     ],
     "interventionsParMois": {
       "juillet 2025": 4,
-      "août 2025": 0,
+      "août 2025": 1,
       "septembre 2025": 0
     }
   }
