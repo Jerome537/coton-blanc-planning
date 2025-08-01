@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdate": "2025-08-01T01:00:45.548Z",
+    "lastUpdate": "2025-08-01T01:30:43.256Z",
     "totalInterventions": 7,
     "interventionsAvecDates": 6,
     "interventionsSansDates": 1,
@@ -163,7 +163,7 @@
       "equipeIds": [
         "1d8543b1-13ef-805a-877d-de5247d73914"
       ],
-      "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+      "client": "GLOBAL PATRIMOINE",
       "clientExistantIds": [
         "1b7543b1-13ef-80f8-8c4e-e36892655b44"
       ],
@@ -247,7 +247,7 @@
       "equipeIds": [
         "1d8543b1-13ef-805a-877d-de5247d73914"
       ],
-      "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+      "client": "GLOBAL PATRIMOINE",
       "clientExistantIds": [
         "1b7543b1-13ef-80f8-8c4e-e36892655b44"
       ],
@@ -722,7 +722,7 @@
         "equipeIds": [
           "1d8543b1-13ef-805a-877d-de5247d73914"
         ],
-        "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+        "client": "GLOBAL PATRIMOINE",
         "clientExistantIds": [
           "1b7543b1-13ef-80f8-8c4e-e36892655b44"
         ],
@@ -806,7 +806,7 @@
         "equipeIds": [
           "1d8543b1-13ef-805a-877d-de5247d73914"
         ],
-        "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+        "client": "GLOBAL PATRIMOINE",
         "clientExistantIds": [
           "1b7543b1-13ef-80f8-8c4e-e36892655b44"
         ],
@@ -1025,7 +1025,7 @@
             "equipeIds": [
               "1d8543b1-13ef-805a-877d-de5247d73914"
             ],
-            "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+            "client": "GLOBAL PATRIMOINE",
             "clientExistantIds": [
               "1b7543b1-13ef-80f8-8c4e-e36892655b44"
             ],
@@ -1065,7 +1065,7 @@
             "equipeIds": [
               "1d8543b1-13ef-805a-877d-de5247d73914"
             ],
-            "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+            "client": "GLOBAL PATRIMOINE",
             "clientExistantIds": [
               "1b7543b1-13ef-80f8-8c4e-e36892655b44"
             ],
@@ -1364,7 +1364,7 @@
       },
       {
         "date": "2025-07-19T09:00:00.000-10:00",
-        "client": "GLOBAL PATRIMOINE GASIOR Jérôme ",
+        "client": "GLOBAL PATRIMOINE",
         "equipe": "ÉQUIPE 5",
         "commune": ""
       },
