@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdate": "2025-08-02T04:00:43.548Z",
+    "lastUpdate": "2025-08-02T04:30:50.061Z",
     "totalInterventions": 7,
     "interventionsAvecDates": 6,
     "interventionsSansDates": 1,
@@ -17,28 +17,22 @@
       "dateFin": "2025-07-12T10:00:00.000-10:00",
       "dateDebutFormatee": "12/07/2025 à 08:00",
       "dureePrevu": 120,
-      "equipe": "ÉQUIPE 4",
-      "couleurEquipe": "vert",
-      "membresIntervenants": "AHINI Purea ,FLORES Dalila ,BELLAIS Samuel",
-      "equipeIds": [
-        "1d8543b1-13ef-80ce-9ed8-d9ca85181811"
-      ],
+      "equipe": "",
+      "couleurEquipe": "Équipe 4",
+      "membresIntervenants": "",
+      "equipeIds": [],
       "client": "",
       "clientExistantIds": [],
       "emailClient": "",
       "telephoneClient": "",
-      "commune": "Papeete",
-      "communeIds": [
-        "1de543b1-13ef-8099-9003-d0075af9eb6c"
-      ],
+      "commune": "",
+      "communeIds": [],
       "adresseSiege": "",
       "adresseIntervention": "",
       "coordonneesGPS": "",
-      "sousAffichage": "Papeete Tel:",
-      "categoriePrestation": "Fin de chantier",
-      "categoriePrestationIds": [
-        "1de543b1-13ef-800e-bb08-e0341de9717e"
-      ],
+      "sousAffichage": "",
+      "categoriePrestation": "",
+      "categoriePrestationIds": [],
       "materielNecessaire": [
         "Traitement spécifique",
         "Monobrosse"
@@ -62,28 +56,22 @@
       "dateFin": "2025-07-14T12:30:00.000-10:00",
       "dateDebutFormatee": "14/07/2025 à 12:00",
       "dureePrevu": 30,
-      "equipe": "ÉQUIPE 5",
-      "couleurEquipe": "rouge",
-      "membresIntervenants": "FLORES Dalila ,TEIHOTAATA Maruia",
-      "equipeIds": [
-        "1d8543b1-13ef-805a-877d-de5247d73914"
-      ],
+      "equipe": "",
+      "couleurEquipe": "Équipe 5",
+      "membresIntervenants": "",
+      "equipeIds": [],
       "client": "",
       "clientExistantIds": [],
       "emailClient": "",
       "telephoneClient": "",
-      "commune": "Paea",
-      "communeIds": [
-        "1e0543b1-13ef-800d-ab43-d2aa4f9a21b6"
-      ],
+      "commune": "",
+      "communeIds": [],
       "adresseSiege": "",
       "adresseIntervention": "",
       "coordonneesGPS": "",
-      "sousAffichage": "Paea Tel:",
-      "categoriePrestation": "“Nettoyage 3h”",
-      "categoriePrestationIds": [
-        "1f2543b1-13ef-806d-98fa-fe0581299f6e"
-      ],
+      "sousAffichage": "",
+      "categoriePrestation": "",
+      "categoriePrestationIds": [],
       "materielNecessaire": [
         "Échafaudage",
         "Perche"
@@ -107,28 +95,22 @@
       "dateFin": "2025-07-16T14:45:00.000-10:00",
       "dateDebutFormatee": "16/07/2025 à 14:00",
       "dureePrevu": 45,
-      "equipe": "ÉQUIPE 7",
-      "couleurEquipe": "bleu",
-      "membresIntervenants": "FLORES Takau ,AHINI Purea ,FLORES Dalila",
-      "equipeIds": [
-        "1d8543b1-13ef-8039-8872-d1e80f0f13e8"
-      ],
+      "equipe": "",
+      "couleurEquipe": "Équipe 7",
+      "membresIntervenants": "",
+      "equipeIds": [],
       "client": "",
       "clientExistantIds": [],
       "emailClient": "",
       "telephoneClient": "",
-      "commune": "Papeete",
-      "communeIds": [
-        "1de543b1-13ef-8099-9003-d0075af9eb6c"
-      ],
+      "commune": "",
+      "communeIds": [],
       "adresseSiege": "",
       "adresseIntervention": "",
       "coordonneesGPS": "",
-      "sousAffichage": "Papeete Tel:",
-      "categoriePrestation": "Libération logement",
-      "categoriePrestationIds": [
-        "1de543b1-13ef-80f5-8559-ea63626a3b7c"
-      ],
+      "sousAffichage": "",
+      "categoriePrestation": "",
+      "categoriePrestationIds": [],
       "materielNecessaire": [
         "Traitement spécifique"
       ],
@@ -151,12 +133,10 @@
       "dateFin": "2025-07-19T09:00:00.000-10:00",
       "dateDebutFormatee": "19/07/2025 à 09:00",
       "dureePrevu": 0.15,
-      "equipe": "ÉQUIPE 5",
-      "couleurEquipe": "rouge",
-      "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
-      "equipeIds": [
-        "1d8543b1-13ef-805a-877d-de5247d73914"
-      ],
+      "equipe": "",
+      "couleurEquipe": "Équipe 5",
+      "membresIntervenants": "",
+      "equipeIds": [],
       "client": "",
       "clientExistantIds": [],
       "emailClient": "",
@@ -166,7 +146,7 @@
       "adresseSiege": "",
       "adresseIntervention": "centre commercial du lotus ",
       "coordonneesGPS": "",
-      "sousAffichage": "Tel:",
+      "sousAffichage": "",
       "categoriePrestation": "",
       "categoriePrestationIds": [],
       "materielNecessaire": [],
@@ -189,28 +169,22 @@
       "dateFin": "2025-08-13T14:45:00.000-10:00",
       "dateDebutFormatee": "13/08/2025 à 14:00",
       "dureePrevu": 45,
-      "equipe": "ÉQUIPE 7",
-      "couleurEquipe": "bleu",
-      "membresIntervenants": "FLORES Takau ,AHINI Purea ,FLORES Dalila",
-      "equipeIds": [
-        "1d8543b1-13ef-8039-8872-d1e80f0f13e8"
-      ],
+      "equipe": "",
+      "couleurEquipe": "Équipe 7",
+      "membresIntervenants": "",
+      "equipeIds": [],
       "client": "",
       "clientExistantIds": [],
       "emailClient": "",
       "telephoneClient": "",
-      "commune": "Papeete",
-      "communeIds": [
-        "1de543b1-13ef-8099-9003-d0075af9eb6c"
-      ],
+      "commune": "",
+      "communeIds": [],
       "adresseSiege": "",
       "adresseIntervention": "",
       "coordonneesGPS": "",
-      "sousAffichage": "Papeete Tel:",
-      "categoriePrestation": "Libération logement",
-      "categoriePrestationIds": [
-        "1de543b1-13ef-80f5-8559-ea63626a3b7c"
-      ],
+      "sousAffichage": "",
+      "categoriePrestation": "",
+      "categoriePrestationIds": [],
       "materielNecessaire": [],
       "materielSpecifique": "",
       "instruction": "olj",
@@ -231,12 +205,10 @@
       "dateFin": "2025-10-18T09:00:00.000-10:00",
       "dateDebutFormatee": "18/10/2025 à 09:00",
       "dureePrevu": 0.15,
-      "equipe": "ÉQUIPE 5",
-      "couleurEquipe": "rouge",
-      "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
-      "equipeIds": [
-        "1d8543b1-13ef-805a-877d-de5247d73914"
-      ],
+      "equipe": "",
+      "couleurEquipe": "Équipe 5",
+      "membresIntervenants": "",
+      "equipeIds": [],
       "client": "",
       "clientExistantIds": [],
       "emailClient": "",
@@ -246,7 +218,7 @@
       "adresseSiege": "",
       "adresseIntervention": "centre commercial du lotus ",
       "coordonneesGPS": "",
-      "sousAffichage": "Tel:",
+      "sousAffichage": "",
       "categoriePrestation": "",
       "categoriePrestationIds": [],
       "materielNecessaire": [],
@@ -269,28 +241,22 @@
       "dateFin": null,
       "dateDebutFormatee": null,
       "dureePrevu": 60,
-      "equipe": "ÉQUIPE 1",
-      "couleurEquipe": "rose",
-      "membresIntervenants": "AHINI Purea ,FLORES Takau ,TEIHOTAATA Maruia",
-      "equipeIds": [
-        "1d8543b1-13ef-81f4-826a-e1f5135f5157"
-      ],
+      "equipe": "",
+      "couleurEquipe": "Équipe 1",
+      "membresIntervenants": "",
+      "equipeIds": [],
       "client": "",
       "clientExistantIds": [],
       "emailClient": "",
       "telephoneClient": "",
-      "commune": "Paea",
-      "communeIds": [
-        "1e0543b1-13ef-800d-ab43-d2aa4f9a21b6"
-      ],
+      "commune": "",
+      "communeIds": [],
       "adresseSiege": "",
       "adresseIntervention": "",
       "coordonneesGPS": "",
-      "sousAffichage": "Paea Tel:",
-      "categoriePrestation": "Prestation particulière",
-      "categoriePrestationIds": [
-        "1f2543b1-13ef-8066-92a8-cdf1da52adb1"
-      ],
+      "sousAffichage": "",
+      "categoriePrestation": "",
+      "categoriePrestationIds": [],
       "materielNecessaire": [
         "Perche"
       ],
@@ -396,10 +362,7 @@
         "1b7543b1-13ef-8058-9df0-fe22c05f8d8b",
         "1b7543b1-13ef-80cd-9192-e7ef220a9342"
       ],
-      "interventions": [
-        "22e543b1-13ef-81fd-8bf2-ee60368b04d0",
-        "238543b1-13ef-803b-a65b-e18b6b08916b"
-      ],
+      "interventions": [],
       "url": "https://www.notion.so/QUIPE-7-1d8543b113ef80398872d1e80f0f13e8",
       "notionUrl": "https://notion.so/1d8543b113ef80398872d1e80f0f13e8",
       "type": "equipe"
@@ -451,11 +414,7 @@
         "1b7543b1-13ef-8060-89a8-f329cd5e17ff",
         "1b7543b1-13ef-8096-bf72-ee2a6c5a6182"
       ],
-      "interventions": [
-        "22e543b1-13ef-8106-8561-f689a46176fe",
-        "238543b1-13ef-80fb-86c0-d33994c28b83",
-        "238543b1-13ef-8020-9d13-eef4ddf675f8"
-      ],
+      "interventions": [],
       "url": "https://www.notion.so/QUIPE-5-1d8543b113ef805a877dde5247d73914",
       "notionUrl": "https://notion.so/1d8543b113ef805a877dde5247d73914",
       "type": "equipe"
@@ -477,9 +436,7 @@
         "1b7543b1-13ef-8064-8132-c188b1487824",
         "1b7543b1-13ef-803c-9ec2-c66c75b716be"
       ],
-      "interventions": [
-        "22e543b1-13ef-810b-8fd9-fbb6fb2ee07e"
-      ],
+      "interventions": [],
       "url": "https://www.notion.so/QUIPE-4-1d8543b113ef80ce9ed8d9ca85181811",
       "notionUrl": "https://notion.so/1d8543b113ef80ce9ed8d9ca85181811",
       "type": "equipe"
@@ -559,9 +516,7 @@
         "1b7543b1-13ef-80b4-a02f-e58bf8d2a43c",
         "237543b1-13ef-8097-a8fc-dda533133a7d"
       ],
-      "interventions": [
-        "22e543b1-13ef-808e-8fd2-ed0985ff388a"
-      ],
+      "interventions": [],
       "url": "https://www.notion.so/QUIPE-1-1d8543b113ef81f4826ae1f5135f5157",
       "notionUrl": "https://notion.so/1d8543b113ef81f4826ae1f5135f5157",
       "type": "equipe"
@@ -576,28 +531,22 @@
         "dateFin": "2025-07-12T10:00:00.000-10:00",
         "dateDebutFormatee": "12/07/2025 à 08:00",
         "dureePrevu": 120,
-        "equipe": "ÉQUIPE 4",
-        "couleurEquipe": "vert",
-        "membresIntervenants": "AHINI Purea ,FLORES Dalila ,BELLAIS Samuel",
-        "equipeIds": [
-          "1d8543b1-13ef-80ce-9ed8-d9ca85181811"
-        ],
+        "equipe": "",
+        "couleurEquipe": "Équipe 4",
+        "membresIntervenants": "",
+        "equipeIds": [],
         "client": "",
         "clientExistantIds": [],
         "emailClient": "",
         "telephoneClient": "",
-        "commune": "Papeete",
-        "communeIds": [
-          "1de543b1-13ef-8099-9003-d0075af9eb6c"
-        ],
+        "commune": "",
+        "communeIds": [],
         "adresseSiege": "",
         "adresseIntervention": "",
         "coordonneesGPS": "",
-        "sousAffichage": "Papeete Tel:",
-        "categoriePrestation": "Fin de chantier",
-        "categoriePrestationIds": [
-          "1de543b1-13ef-800e-bb08-e0341de9717e"
-        ],
+        "sousAffichage": "",
+        "categoriePrestation": "",
+        "categoriePrestationIds": [],
         "materielNecessaire": [
           "Traitement spécifique",
           "Monobrosse"
@@ -621,28 +570,22 @@
         "dateFin": "2025-07-14T12:30:00.000-10:00",
         "dateDebutFormatee": "14/07/2025 à 12:00",
         "dureePrevu": 30,
-        "equipe": "ÉQUIPE 5",
-        "couleurEquipe": "rouge",
-        "membresIntervenants": "FLORES Dalila ,TEIHOTAATA Maruia",
-        "equipeIds": [
-          "1d8543b1-13ef-805a-877d-de5247d73914"
-        ],
+        "equipe": "",
+        "couleurEquipe": "Équipe 5",
+        "membresIntervenants": "",
+        "equipeIds": [],
         "client": "",
         "clientExistantIds": [],
         "emailClient": "",
         "telephoneClient": "",
-        "commune": "Paea",
-        "communeIds": [
-          "1e0543b1-13ef-800d-ab43-d2aa4f9a21b6"
-        ],
+        "commune": "",
+        "communeIds": [],
         "adresseSiege": "",
         "adresseIntervention": "",
         "coordonneesGPS": "",
-        "sousAffichage": "Paea Tel:",
-        "categoriePrestation": "“Nettoyage 3h”",
-        "categoriePrestationIds": [
-          "1f2543b1-13ef-806d-98fa-fe0581299f6e"
-        ],
+        "sousAffichage": "",
+        "categoriePrestation": "",
+        "categoriePrestationIds": [],
         "materielNecessaire": [
           "Échafaudage",
           "Perche"
@@ -666,28 +609,22 @@
         "dateFin": "2025-07-16T14:45:00.000-10:00",
         "dateDebutFormatee": "16/07/2025 à 14:00",
         "dureePrevu": 45,
-        "equipe": "ÉQUIPE 7",
-        "couleurEquipe": "bleu",
-        "membresIntervenants": "FLORES Takau ,AHINI Purea ,FLORES Dalila",
-        "equipeIds": [
-          "1d8543b1-13ef-8039-8872-d1e80f0f13e8"
-        ],
+        "equipe": "",
+        "couleurEquipe": "Équipe 7",
+        "membresIntervenants": "",
+        "equipeIds": [],
         "client": "",
         "clientExistantIds": [],
         "emailClient": "",
         "telephoneClient": "",
-        "commune": "Papeete",
-        "communeIds": [
-          "1de543b1-13ef-8099-9003-d0075af9eb6c"
-        ],
+        "commune": "",
+        "communeIds": [],
         "adresseSiege": "",
         "adresseIntervention": "",
         "coordonneesGPS": "",
-        "sousAffichage": "Papeete Tel:",
-        "categoriePrestation": "Libération logement",
-        "categoriePrestationIds": [
-          "1de543b1-13ef-80f5-8559-ea63626a3b7c"
-        ],
+        "sousAffichage": "",
+        "categoriePrestation": "",
+        "categoriePrestationIds": [],
         "materielNecessaire": [
           "Traitement spécifique"
         ],
@@ -710,12 +647,10 @@
         "dateFin": "2025-07-19T09:00:00.000-10:00",
         "dateDebutFormatee": "19/07/2025 à 09:00",
         "dureePrevu": 0.15,
-        "equipe": "ÉQUIPE 5",
-        "couleurEquipe": "rouge",
-        "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
-        "equipeIds": [
-          "1d8543b1-13ef-805a-877d-de5247d73914"
-        ],
+        "equipe": "",
+        "couleurEquipe": "Équipe 5",
+        "membresIntervenants": "",
+        "equipeIds": [],
         "client": "",
         "clientExistantIds": [],
         "emailClient": "",
@@ -725,7 +660,7 @@
         "adresseSiege": "",
         "adresseIntervention": "centre commercial du lotus ",
         "coordonneesGPS": "",
-        "sousAffichage": "Tel:",
+        "sousAffichage": "",
         "categoriePrestation": "",
         "categoriePrestationIds": [],
         "materielNecessaire": [],
@@ -748,28 +683,22 @@
         "dateFin": "2025-08-13T14:45:00.000-10:00",
         "dateDebutFormatee": "13/08/2025 à 14:00",
         "dureePrevu": 45,
-        "equipe": "ÉQUIPE 7",
-        "couleurEquipe": "bleu",
-        "membresIntervenants": "FLORES Takau ,AHINI Purea ,FLORES Dalila",
-        "equipeIds": [
-          "1d8543b1-13ef-8039-8872-d1e80f0f13e8"
-        ],
+        "equipe": "",
+        "couleurEquipe": "Équipe 7",
+        "membresIntervenants": "",
+        "equipeIds": [],
         "client": "",
         "clientExistantIds": [],
         "emailClient": "",
         "telephoneClient": "",
-        "commune": "Papeete",
-        "communeIds": [
-          "1de543b1-13ef-8099-9003-d0075af9eb6c"
-        ],
+        "commune": "",
+        "communeIds": [],
         "adresseSiege": "",
         "adresseIntervention": "",
         "coordonneesGPS": "",
-        "sousAffichage": "Papeete Tel:",
-        "categoriePrestation": "Libération logement",
-        "categoriePrestationIds": [
-          "1de543b1-13ef-80f5-8559-ea63626a3b7c"
-        ],
+        "sousAffichage": "",
+        "categoriePrestation": "",
+        "categoriePrestationIds": [],
         "materielNecessaire": [],
         "materielSpecifique": "",
         "instruction": "olj",
@@ -790,12 +719,10 @@
         "dateFin": "2025-10-18T09:00:00.000-10:00",
         "dateDebutFormatee": "18/10/2025 à 09:00",
         "dureePrevu": 0.15,
-        "equipe": "ÉQUIPE 5",
-        "couleurEquipe": "rouge",
-        "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
-        "equipeIds": [
-          "1d8543b1-13ef-805a-877d-de5247d73914"
-        ],
+        "equipe": "",
+        "couleurEquipe": "Équipe 5",
+        "membresIntervenants": "",
+        "equipeIds": [],
         "client": "",
         "clientExistantIds": [],
         "emailClient": "",
@@ -805,7 +732,7 @@
         "adresseSiege": "",
         "adresseIntervention": "centre commercial du lotus ",
         "coordonneesGPS": "",
-        "sousAffichage": "Tel:",
+        "sousAffichage": "",
         "categoriePrestation": "",
         "categoriePrestationIds": [],
         "materielNecessaire": [],
@@ -830,28 +757,22 @@
         "dateFin": null,
         "dateDebutFormatee": null,
         "dureePrevu": 60,
-        "equipe": "ÉQUIPE 1",
-        "couleurEquipe": "rose",
-        "membresIntervenants": "AHINI Purea ,FLORES Takau ,TEIHOTAATA Maruia",
-        "equipeIds": [
-          "1d8543b1-13ef-81f4-826a-e1f5135f5157"
-        ],
+        "equipe": "",
+        "couleurEquipe": "Équipe 1",
+        "membresIntervenants": "",
+        "equipeIds": [],
         "client": "",
         "clientExistantIds": [],
         "emailClient": "",
         "telephoneClient": "",
-        "commune": "Paea",
-        "communeIds": [
-          "1e0543b1-13ef-800d-ab43-d2aa4f9a21b6"
-        ],
+        "commune": "",
+        "communeIds": [],
         "adresseSiege": "",
         "adresseIntervention": "",
         "coordonneesGPS": "",
-        "sousAffichage": "Paea Tel:",
-        "categoriePrestation": "Prestation particulière",
-        "categoriePrestationIds": [
-          "1f2543b1-13ef-8066-92a8-cdf1da52adb1"
-        ],
+        "sousAffichage": "",
+        "categoriePrestation": "",
+        "categoriePrestationIds": [],
         "materielNecessaire": [
           "Perche"
         ],
@@ -868,489 +789,45 @@
         "type": "intervention"
       }
     ],
-    "parEquipe": {
-      "ÉQUIPE 4": {
-        "nomEquipe": "ÉQUIPE 4",
-        "couleur": "vert",
-        "interventions": [
-          {
-            "id": "22e543b1-13ef-810b-8fd9-fbb6fb2ee07e",
-            "title": "AIR France PPT de 08:00 à 10:00",
-            "dateDebut": "2025-07-12T08:00:00.000-10:00",
-            "dateFin": "2025-07-12T10:00:00.000-10:00",
-            "dateDebutFormatee": "12/07/2025 à 08:00",
-            "dureePrevu": 120,
-            "equipe": "ÉQUIPE 4",
-            "couleurEquipe": "vert",
-            "membresIntervenants": "AHINI Purea ,FLORES Dalila ,BELLAIS Samuel",
-            "equipeIds": [
-              "1d8543b1-13ef-80ce-9ed8-d9ca85181811"
-            ],
-            "client": "",
-            "clientExistantIds": [],
-            "emailClient": "",
-            "telephoneClient": "",
-            "commune": "Papeete",
-            "communeIds": [
-              "1de543b1-13ef-8099-9003-d0075af9eb6c"
-            ],
-            "adresseSiege": "",
-            "adresseIntervention": "",
-            "coordonneesGPS": "",
-            "sousAffichage": "Papeete Tel:",
-            "categoriePrestation": "Fin de chantier",
-            "categoriePrestationIds": [
-              "1de543b1-13ef-800e-bb08-e0341de9717e"
-            ],
-            "materielNecessaire": [
-              "Traitement spécifique",
-              "Monobrosse"
-            ],
-            "materielSpecifique": "Traitement spécifique,Monobrosse",
-            "instruction": "attention",
-            "statutValidationBL": false,
-            "statutValidationDevis": false,
-            "blLien": "https://docs.google.com/document/d/1MdiK0uZfi29jVmXpiJLTsvZavHeSQIBPxOhX6mVLsPQ/edit?usp=drivesdk",
-            "recurrent": false,
-            "source": "",
-            "satisfaction": null,
-            "url": "https://www.notion.so/AIR-France-PPT-de-08-00-10-00-22e543b113ef810b8fd9fbb6fb2ee07e",
-            "notionUrl": "https://notion.so/22e543b113ef810b8fd9fbb6fb2ee07e",
-            "type": "intervention"
-          }
-        ],
-        "total": 1,
-        "equipeDetails": {
-          "id": "1d8543b1-13ef-80ce-9ed8-d9ca85181811",
-          "nom": "ÉQUIPE 4",
-          "couleur": "vert",
-          "membres": [
-            "1ec543b1-13ef-8018-a8b0-d2b74059a346",
-            "1ed543b1-13ef-809c-b5f1-eccb0a8842f5"
-          ],
-          "telephone": "89450456",
-          "chauffeur": [],
-          "commentaires": "",
-          "clientsSocietes": [
-            "1b7543b1-13ef-8023-b182-d033b90bf53d",
-            "1b7543b1-13ef-80fa-8bca-dceb4c628a48",
-            "1b7543b1-13ef-8064-8132-c188b1487824",
-            "1b7543b1-13ef-803c-9ec2-c66c75b716be"
-          ],
-          "interventions": [
-            "22e543b1-13ef-810b-8fd9-fbb6fb2ee07e"
-          ],
-          "url": "https://www.notion.so/QUIPE-4-1d8543b113ef80ce9ed8d9ca85181811",
-          "notionUrl": "https://notion.so/1d8543b113ef80ce9ed8d9ca85181811",
-          "type": "equipe"
-        }
-      },
-      "ÉQUIPE 5": {
-        "nomEquipe": "ÉQUIPE 5",
-        "couleur": "rouge",
-        "interventions": [
-          {
-            "id": "22e543b1-13ef-8106-8561-f689a46176fe",
-            "title": "BEV'CO de 12:00 à 12:30",
-            "dateDebut": "2025-07-14T12:00:00.000-10:00",
-            "dateFin": "2025-07-14T12:30:00.000-10:00",
-            "dateDebutFormatee": "14/07/2025 à 12:00",
-            "dureePrevu": 30,
-            "equipe": "ÉQUIPE 5",
-            "couleurEquipe": "rouge",
-            "membresIntervenants": "FLORES Dalila ,TEIHOTAATA Maruia",
-            "equipeIds": [
-              "1d8543b1-13ef-805a-877d-de5247d73914"
-            ],
-            "client": "",
-            "clientExistantIds": [],
-            "emailClient": "",
-            "telephoneClient": "",
-            "commune": "Paea",
-            "communeIds": [
-              "1e0543b1-13ef-800d-ab43-d2aa4f9a21b6"
-            ],
-            "adresseSiege": "",
-            "adresseIntervention": "",
-            "coordonneesGPS": "",
-            "sousAffichage": "Paea Tel:",
-            "categoriePrestation": "“Nettoyage 3h”",
-            "categoriePrestationIds": [
-              "1f2543b1-13ef-806d-98fa-fe0581299f6e"
-            ],
-            "materielNecessaire": [
-              "Échafaudage",
-              "Perche"
-            ],
-            "materielSpecifique": "Échafaudage,Perche",
-            "instruction": "tyhf",
-            "statutValidationBL": false,
-            "statutValidationDevis": false,
-            "blLien": "https://docs.google.com/document/d/16VDy0EkAgweIlTvsa9EgoVymNBUoaJGCLEI7zwhpySI/edit?usp=drivesdk",
-            "recurrent": false,
-            "source": "",
-            "satisfaction": null,
-            "url": "https://www.notion.so/BEV-CO-de-12-00-12-30-22e543b113ef81068561f689a46176fe",
-            "notionUrl": "https://notion.so/22e543b113ef81068561f689a46176fe",
-            "type": "intervention"
-          },
-          {
-            "id": "238543b1-13ef-80fb-86c0-d33994c28b83",
-            "title": "GLOBAL PATRIMOINE de 09:00 à 09:00",
-            "dateDebut": "2025-07-19T09:00:00.000-10:00",
-            "dateFin": "2025-07-19T09:00:00.000-10:00",
-            "dateDebutFormatee": "19/07/2025 à 09:00",
-            "dureePrevu": 0.15,
-            "equipe": "ÉQUIPE 5",
-            "couleurEquipe": "rouge",
-            "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
-            "equipeIds": [
-              "1d8543b1-13ef-805a-877d-de5247d73914"
-            ],
-            "client": "",
-            "clientExistantIds": [],
-            "emailClient": "",
-            "telephoneClient": "",
-            "commune": "",
-            "communeIds": [],
-            "adresseSiege": "",
-            "adresseIntervention": "centre commercial du lotus ",
-            "coordonneesGPS": "",
-            "sousAffichage": "Tel:",
-            "categoriePrestation": "",
-            "categoriePrestationIds": [],
-            "materielNecessaire": [],
-            "materielSpecifique": "",
-            "instruction": "Bien orienter les coquillages",
-            "statutValidationBL": false,
-            "statutValidationDevis": false,
-            "blLien": "",
-            "recurrent": false,
-            "source": "",
-            "satisfaction": null,
-            "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80fb86c0d33994c28b83",
-            "notionUrl": "https://notion.so/238543b113ef80fb86c0d33994c28b83",
-            "type": "intervention"
-          },
-          {
-            "id": "238543b1-13ef-8020-9d13-eef4ddf675f8",
-            "title": "GLOBAL PATRIMOINE de 09:00 à 09:00",
-            "dateDebut": "2025-10-18T09:00:00.000-10:00",
-            "dateFin": "2025-10-18T09:00:00.000-10:00",
-            "dateDebutFormatee": "18/10/2025 à 09:00",
-            "dureePrevu": 0.15,
-            "equipe": "ÉQUIPE 5",
-            "couleurEquipe": "rouge",
-            "membresIntervenants": "MAIROTO Mareva ,TOUAITAHUATA Heiani",
-            "equipeIds": [
-              "1d8543b1-13ef-805a-877d-de5247d73914"
-            ],
-            "client": "",
-            "clientExistantIds": [],
-            "emailClient": "",
-            "telephoneClient": "",
-            "commune": "",
-            "communeIds": [],
-            "adresseSiege": "",
-            "adresseIntervention": "centre commercial du lotus ",
-            "coordonneesGPS": "",
-            "sousAffichage": "Tel:",
-            "categoriePrestation": "",
-            "categoriePrestationIds": [],
-            "materielNecessaire": [],
-            "materielSpecifique": "",
-            "instruction": "Bien orienter les coquillages",
-            "statutValidationBL": false,
-            "statutValidationDevis": false,
-            "blLien": "",
-            "recurrent": false,
-            "source": "",
-            "satisfaction": null,
-            "url": "https://www.notion.so/GLOBAL-PATRIMOINE-de-09-00-09-00-238543b113ef80209d13eef4ddf675f8",
-            "notionUrl": "https://notion.so/238543b113ef80209d13eef4ddf675f8",
-            "type": "intervention"
-          }
-        ],
-        "total": 3,
-        "equipeDetails": {
-          "id": "1d8543b1-13ef-805a-877d-de5247d73914",
-          "nom": "ÉQUIPE 5",
-          "couleur": "rouge",
-          "membres": [
-            "1ec543b1-13ef-80ae-b382-fb6bf8e0d7af",
-            "1ed543b1-13ef-806c-b0a1-e9105eb1f4c6",
-            "21f543b1-13ef-8110-a06b-d6eed582c92d"
-          ],
-          "telephone": "89450462",
-          "chauffeur": [
-            "1ec543b1-13ef-80ae-b382-fb6bf8e0d7af"
-          ],
-          "commentaires": "",
-          "clientsSocietes": [
-            "1b7543b1-13ef-805f-9a35-d9793af2bc3a",
-            "1b7543b1-13ef-80c7-8967-e36e54cf74f6",
-            "1b7543b1-13ef-8060-89a8-f329cd5e17ff",
-            "1b7543b1-13ef-8096-bf72-ee2a6c5a6182"
-          ],
-          "interventions": [
-            "22e543b1-13ef-8106-8561-f689a46176fe",
-            "238543b1-13ef-80fb-86c0-d33994c28b83",
-            "238543b1-13ef-8020-9d13-eef4ddf675f8"
-          ],
-          "url": "https://www.notion.so/QUIPE-5-1d8543b113ef805a877dde5247d73914",
-          "notionUrl": "https://notion.so/1d8543b113ef805a877dde5247d73914",
-          "type": "equipe"
-        }
-      },
-      "ÉQUIPE 7": {
-        "nomEquipe": "ÉQUIPE 7",
-        "couleur": "bleu",
-        "interventions": [
-          {
-            "id": "22e543b1-13ef-81fd-8bf2-ee60368b04d0",
-            "title": "ACADEMIE FAYN de 14:00 à 14:45",
-            "dateDebut": "2025-07-16T14:00:00.000-10:00",
-            "dateFin": "2025-07-16T14:45:00.000-10:00",
-            "dateDebutFormatee": "16/07/2025 à 14:00",
-            "dureePrevu": 45,
-            "equipe": "ÉQUIPE 7",
-            "couleurEquipe": "bleu",
-            "membresIntervenants": "FLORES Takau ,AHINI Purea ,FLORES Dalila",
-            "equipeIds": [
-              "1d8543b1-13ef-8039-8872-d1e80f0f13e8"
-            ],
-            "client": "",
-            "clientExistantIds": [],
-            "emailClient": "",
-            "telephoneClient": "",
-            "commune": "Papeete",
-            "communeIds": [
-              "1de543b1-13ef-8099-9003-d0075af9eb6c"
-            ],
-            "adresseSiege": "",
-            "adresseIntervention": "",
-            "coordonneesGPS": "",
-            "sousAffichage": "Papeete Tel:",
-            "categoriePrestation": "Libération logement",
-            "categoriePrestationIds": [
-              "1de543b1-13ef-80f5-8559-ea63626a3b7c"
-            ],
-            "materielNecessaire": [
-              "Traitement spécifique"
-            ],
-            "materielSpecifique": "Traitement spécifique",
-            "instruction": "olj",
-            "statutValidationBL": false,
-            "statutValidationDevis": false,
-            "blLien": "https://docs.google.com/document/d/1ccnMP70ghKZXDHvMTvT508kkht8BiFYiN9EAfogCoE8/edit?usp=drivesdk",
-            "recurrent": false,
-            "source": "",
-            "satisfaction": null,
-            "url": "https://www.notion.so/ACADEMIE-FAYN-de-14-00-14-45-22e543b113ef81fd8bf2ee60368b04d0",
-            "notionUrl": "https://notion.so/22e543b113ef81fd8bf2ee60368b04d0",
-            "type": "intervention"
-          },
-          {
-            "id": "238543b1-13ef-803b-a65b-e18b6b08916b",
-            "title": "ACADEMIE FAYN de 14:00 à 14:45",
-            "dateDebut": "2025-08-13T14:00:00.000-10:00",
-            "dateFin": "2025-08-13T14:45:00.000-10:00",
-            "dateDebutFormatee": "13/08/2025 à 14:00",
-            "dureePrevu": 45,
-            "equipe": "ÉQUIPE 7",
-            "couleurEquipe": "bleu",
-            "membresIntervenants": "FLORES Takau ,AHINI Purea ,FLORES Dalila",
-            "equipeIds": [
-              "1d8543b1-13ef-8039-8872-d1e80f0f13e8"
-            ],
-            "client": "",
-            "clientExistantIds": [],
-            "emailClient": "",
-            "telephoneClient": "",
-            "commune": "Papeete",
-            "communeIds": [
-              "1de543b1-13ef-8099-9003-d0075af9eb6c"
-            ],
-            "adresseSiege": "",
-            "adresseIntervention": "",
-            "coordonneesGPS": "",
-            "sousAffichage": "Papeete Tel:",
-            "categoriePrestation": "Libération logement",
-            "categoriePrestationIds": [
-              "1de543b1-13ef-80f5-8559-ea63626a3b7c"
-            ],
-            "materielNecessaire": [],
-            "materielSpecifique": "",
-            "instruction": "olj",
-            "statutValidationBL": false,
-            "statutValidationDevis": false,
-            "blLien": "",
-            "recurrent": false,
-            "source": "",
-            "satisfaction": null,
-            "url": "https://www.notion.so/ACADEMIE-FAYN-de-14-00-14-45-238543b113ef803ba65be18b6b08916b",
-            "notionUrl": "https://notion.so/238543b113ef803ba65be18b6b08916b",
-            "type": "intervention"
-          }
-        ],
-        "total": 2,
-        "equipeDetails": {
-          "id": "1d8543b1-13ef-8039-8872-d1e80f0f13e8",
-          "nom": "ÉQUIPE 7",
-          "couleur": "bleu",
-          "membres": [
-            "1ec543b1-13ef-80f1-99ba-ee89a979bf63",
-            "1ec543b1-13ef-8039-afee-e9d8df0664a9",
-            "1ed543b1-13ef-80e4-80ac-d4a4465a0efa"
-          ],
-          "telephone": "89450454",
-          "chauffeur": [
-            "1ec543b1-13ef-80f1-99ba-ee89a979bf63"
-          ],
-          "commentaires": "",
-          "clientsSocietes": [
-            "1b7543b1-13ef-8006-950f-d0765e416216",
-            "1b7543b1-13ef-80f8-8c4e-e36892655b44",
-            "1b7543b1-13ef-8063-b2a3-fe6aaf165880",
-            "1b7543b1-13ef-802b-b879-e8180fde76a7",
-            "1b7543b1-13ef-80de-8ccd-da15090cd414",
-            "1b7543b1-13ef-80e9-862e-e5a5c23a61cd",
-            "1b7543b1-13ef-8053-b64c-ee4cca146b58",
-            "1b7543b1-13ef-8062-92c8-c9429b343f22",
-            "1b7543b1-13ef-8058-9df0-fe22c05f8d8b",
-            "1b7543b1-13ef-80cd-9192-e7ef220a9342"
-          ],
-          "interventions": [
-            "22e543b1-13ef-81fd-8bf2-ee60368b04d0",
-            "238543b1-13ef-803b-a65b-e18b6b08916b"
-          ],
-          "url": "https://www.notion.so/QUIPE-7-1d8543b113ef80398872d1e80f0f13e8",
-          "notionUrl": "https://notion.so/1d8543b113ef80398872d1e80f0f13e8",
-          "type": "equipe"
-        }
-      },
-      "ÉQUIPE 1": {
-        "nomEquipe": "ÉQUIPE 1",
-        "couleur": "rose",
-        "interventions": [
-          {
-            "id": "22e543b1-13ef-808e-8fd2-ed0985ff388a",
-            "title": "Nouvelle intervention",
-            "dateDebut": null,
-            "dateFin": null,
-            "dateDebutFormatee": null,
-            "dureePrevu": 60,
-            "equipe": "ÉQUIPE 1",
-            "couleurEquipe": "rose",
-            "membresIntervenants": "AHINI Purea ,FLORES Takau ,TEIHOTAATA Maruia",
-            "equipeIds": [
-              "1d8543b1-13ef-81f4-826a-e1f5135f5157"
-            ],
-            "client": "",
-            "clientExistantIds": [],
-            "emailClient": "",
-            "telephoneClient": "",
-            "commune": "Paea",
-            "communeIds": [
-              "1e0543b1-13ef-800d-ab43-d2aa4f9a21b6"
-            ],
-            "adresseSiege": "",
-            "adresseIntervention": "",
-            "coordonneesGPS": "",
-            "sousAffichage": "Paea Tel:",
-            "categoriePrestation": "Prestation particulière",
-            "categoriePrestationIds": [
-              "1f2543b1-13ef-8066-92a8-cdf1da52adb1"
-            ],
-            "materielNecessaire": [
-              "Perche"
-            ],
-            "materielSpecifique": "Perche",
-            "instruction": "",
-            "statutValidationBL": false,
-            "statutValidationDevis": false,
-            "blLien": "https://docs.google.com/document/d/194h89Dfbnti7bBVzSXQ_u1RFRBIXK0Eb7QqaRxLb3Pw/edit?usp=drivesdk",
-            "recurrent": false,
-            "source": "",
-            "satisfaction": null,
-            "url": "https://www.notion.so/Nouvelle-intervention-22e543b113ef808e8fd2ed0985ff388a",
-            "notionUrl": "https://notion.so/22e543b113ef808e8fd2ed0985ff388a",
-            "type": "intervention"
-          }
-        ],
-        "total": 1,
-        "equipeDetails": {
-          "id": "1d8543b1-13ef-81f4-826a-e1f5135f5157",
-          "nom": "ÉQUIPE 1",
-          "couleur": "rose",
-          "membres": [
-            "1ec543b1-13ef-80ea-a633-dce05c6bc137",
-            "1ec543b1-13ef-80fb-a2b1-cd0c49bca283",
-            "1ec543b1-13ef-8057-97b5-ce47e3517ac2"
-          ],
-          "telephone": "89450455",
-          "chauffeur": [
-            "1ec543b1-13ef-80fb-a2b1-cd0c49bca283"
-          ],
-          "commentaires": "",
-          "clientsSocietes": [
-            "1b7543b1-13ef-805f-9a35-d9793af2bc3a",
-            "1b7543b1-13ef-80dd-ba73-e40ffe5b4dde",
-            "1b7543b1-13ef-8012-8928-e90765dde788",
-            "1b7543b1-13ef-8090-b59e-d6bc8ea01b1f",
-            "1b7543b1-13ef-8038-b74f-c6ced3a6a182",
-            "1b7543b1-13ef-80d7-a6e5-eaf30f74395f",
-            "1b7543b1-13ef-80be-8187-e447c5e5cf2c",
-            "1b7543b1-13ef-80b4-a02f-e58bf8d2a43c",
-            "237543b1-13ef-8097-a8fc-dda533133a7d"
-          ],
-          "interventions": [
-            "22e543b1-13ef-808e-8fd2-ed0985ff388a"
-          ],
-          "url": "https://www.notion.so/QUIPE-1-1d8543b113ef81f4826ae1f5135f5157",
-          "notionUrl": "https://notion.so/1d8543b113ef81f4826ae1f5135f5157",
-          "type": "equipe"
-        }
-      }
-    }
+    "parEquipe": {}
   },
   "stats": {
     "totalInterventions": 7,
     "interventionsAvecDates": 6,
     "interventionsSansDates": 1,
     "totalEquipes": 10,
-    "equipesAvecInterventions": 4,
+    "equipesAvecInterventions": 0,
     "errorsCount": 0,
     "prochainesInterventions": [
       {
         "date": "2025-07-12T08:00:00.000-10:00",
         "client": "",
-        "equipe": "ÉQUIPE 4",
-        "commune": "Papeete"
+        "equipe": "",
+        "commune": ""
       },
       {
         "date": "2025-07-14T12:00:00.000-10:00",
         "client": "",
-        "equipe": "ÉQUIPE 5",
-        "commune": "Paea"
+        "equipe": "",
+        "commune": ""
       },
       {
         "date": "2025-07-16T14:00:00.000-10:00",
         "client": "",
-        "equipe": "ÉQUIPE 7",
-        "commune": "Papeete"
+        "equipe": "",
+        "commune": ""
       },
       {
         "date": "2025-07-19T09:00:00.000-10:00",
         "client": "",
-        "equipe": "ÉQUIPE 5",
+        "equipe": "",
         "commune": ""
       },
       {
         "date": "2025-08-13T14:00:00.000-10:00",
         "client": "",
-        "equipe": "ÉQUIPE 7",
-        "commune": "Papeete"
+        "equipe": "",
+        "commune": ""
       }
     ],
     "interventionsParMois": {
