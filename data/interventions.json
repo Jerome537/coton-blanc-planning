@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdate": "2025-08-07T19:30:40.704Z",
+    "lastUpdate": "2025-08-07T20:00:44.410Z",
     "totalInterventions": 7,
     "interventionsAvecDates": 6,
     "interventionsSansDates": 1,
@@ -302,7 +302,8 @@
       "chauffeur": [],
       "commentaires": "",
       "clientsSocietes": [
-        "1b7543b1-13ef-801a-a79b-cce223bf1619"
+        "1b7543b1-13ef-801a-a79b-cce223bf1619",
+        "248543b1-13ef-81a5-aa1d-f504be52dbf7"
       ],
       "interventions": [],
       "url": "https://www.notion.so/QUIPE-Dial-Isis-1d8543b113ef804891eae7af6968afab",
